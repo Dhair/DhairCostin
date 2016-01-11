@@ -1,4 +1,4 @@
-package com.dhair.costin.ui.main;
+package com.dhair.costin.ui.enter;
 
 import android.os.Bundle;
 

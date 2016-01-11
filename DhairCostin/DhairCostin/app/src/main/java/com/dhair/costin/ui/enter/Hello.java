@@ -1,4 +1,4 @@
-package com.dhair.costin.ui.main;
+package com.dhair.costin.ui.enter;
 
 /**
  * Created by jixin.jia on 15/11/5.

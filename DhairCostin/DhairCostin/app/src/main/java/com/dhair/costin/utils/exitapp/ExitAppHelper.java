@@ -8,7 +8,7 @@ import android.content.IntentFilter;
 import android.os.Handler;
 import android.os.Looper;
 
-import com.dhair.costin.ui.main.EnterActivity;
+import com.dhair.costin.ui.enter.EnterActivity;
 
 import java.lang.ref.WeakReference;
 
