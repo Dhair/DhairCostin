@@ -1,0 +1,100 @@
+apply plugin: 'com.android.application'
+apply plugin: "com.dhair.hotfix" //Hotfix
+apply plugin: 'com.neenbedankt.android-apt' // AutoLayout、Dragger
+apply plugin: 'me.tatarka.retrolambda' //retrolambda
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.dhair.costin"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    sourceSets {
+        main {
+            res.srcDirs = [
+                    'src/main/res/layouts/home',
+                    'src/main/res/layouts/enter',
+                    'src/main/res/layouts/base',
+                    'src/main/res/layouts',
+                    'src/main/res']
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+            versionNameSuffix ".dev"
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('../keystore/zui.keystore')
+            storePassword 'ourbri321'
+            keyAlias 'bri.keystore'
+            keyPassword 'ourbri321'
+        }
+    }
+
+    // Channels
+    productFlavors {
+        xiaomi {}
+        qihoo {}
+    }
+
+    //retrolambda
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    //Needed because of this https://github.com/square/okio/issues/58
+    lintOptions {
+        warning 'InvalidPackage'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    //Uninstall
+    compile project(':UninstallWatcher')
+    //Hotfix
+    compile project(':Hotfix')
+    //AutoLayout
+    compile project(':autolayout_api')
+    //AutoLayout
+    apt project(':autolayout_compiler')
+    //AutoLayout
+    compile project(':AutoLayout')
+    compile project(':datastructs_algorithm')
+    compile project(':video_recorder_handle')
+    compile project(':android_common_library')
+    compile project(':android_common_process')
+    //Retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta3'
+    compile 'com.squareup.okhttp:okhttp:2.7.0'
+    //butterknife
+    compile 'com.jakewharton:butterknife:7.0.1'
+    //Log
+//    compile 'com.jakewharton.timber:timber:4.1.0'
+    //RXJava
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    //Dagger
+    compile "com.google.dagger:dagger:2.0.2"
+    apt "com.google.dagger:dagger-compiler:2.0.2"
+    provided 'org.glassfish:javax.annotation:10.0-b28' //Required by Dagger2
+}

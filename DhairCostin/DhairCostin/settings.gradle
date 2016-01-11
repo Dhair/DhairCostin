@@ -1,0 +1,19 @@
+include ':app', ':UninstallWatcher', ':Hotfix', ':AutoLayout'
+
+include ':autolayout_api'
+project(':autolayout_api').projectDir = new File('../AutoLayoutPlugin/autolayout_api')
+
+include ':autolayout_compiler'
+project(':autolayout_compiler').projectDir = new File('../AutoLayoutPlugin/autolayout_compiler')
+
+include ':datastructs_algorithm'
+project(':datastructs_algorithm').projectDir = new File('../DatastructurePlugin/datastructs_algorithm')
+
+include ':video_recorder_handle'
+project(':video_recorder_handle').projectDir = new File('../VideoRecorderPlugin/video_recorder_handle')
+
+include ':android_common_library'
+project(':android_common_library').projectDir = new File('../AndroidCommonPlugin/android_common_library')
+
+include ':android_common_process'
+project(':android_common_process').projectDir = new File('../AndroidCommonPlugin/android_common_process')

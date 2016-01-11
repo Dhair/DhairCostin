@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../AndroidCommonPlugin/android_common_library" />
+            <option value="$PROJECT_DIR$/../AndroidCommonPlugin/android_common_process" />
+            <option value="$PROJECT_DIR$/../AutoLayoutPlugin/autolayout_api" />
+            <option value="$PROJECT_DIR$/../AutoLayoutPlugin/autolayout_compiler" />
+            <option value="$PROJECT_DIR$/../DatastructurePlugin/datastructs_algorithm" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/AutoLayout" />
+            <option value="$PROJECT_DIR$/Hotfix" />
+            <option value="$PROJECT_DIR$/UninstallWatcher" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/../VideoRecorderPlugin/video_recorder_handle" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
