@@ -1,14 +1,12 @@
 package com.dhair.costin.ui.splash;
 
 import android.content.Context;
-import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.widget.TextView;
 
 import com.dhair.costin.R;
 import com.dhair.costin.ui.base.BaseActivity;
 import com.dhair.costin.ui.home.HomeActivity;
-import com.dhair.costin.utils.exitapp.ExitAppHelper;
 
 import butterknife.Bind;
 
@@ -19,12 +17,11 @@ import butterknife.Bind;
 public class SplashActivity extends BaseActivity<SplashPresenter> {
     @Bind(R.id.textview)
     TextView mTextView;
-    private ExitAppHelper mExitAppHelper;
 
     @Nullable
     @Override
     protected SplashPresenter createPresenter(Context context) {
-        return new SplashPresenter();
+        return new SplashPresenter(context);
     }
 
     @Override
@@ -34,19 +31,7 @@ public class SplashActivity extends BaseActivity<SplashPresenter> {
 
     @Override
     protected void initData() {
-        mExitAppHelper = new ExitAppHelper(SplashActivity.this);
-    }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        mExitAppHelper.registerReceiver();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        mExitAppHelper.unregisterReceiver();
     }
 
     @Override

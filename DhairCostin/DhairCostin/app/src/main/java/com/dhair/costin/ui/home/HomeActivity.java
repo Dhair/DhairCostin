@@ -50,7 +50,7 @@ public class HomeActivity extends BaseActivity {
     @NonNull
     @Override
     protected BasePresenter createPresenter(Context context) {
-        return new HomePresenter();
+        return new HomePresenter(context);
     }
 
     @Override

@@ -17,21 +17,24 @@ import java.lang.ref.WeakReference;
  * Email: deng.shengjin@zuimeia.com
  */
 public class ExitAppHelper {
-    private Activity mActivity;
+    private Context mContext;
     private ExitReceiver mExitReceiver;
     private boolean mReceiverRegistered;
     private static final String EXIT_APP_RECEIVER = "ExitAppReceiver";
 
-    public ExitAppHelper(Activity activity) {
-        mActivity = activity;
-        mExitReceiver = new ExitReceiver(mActivity);
+    public ExitAppHelper(Context context) {
+        if (!(context instanceof Activity)) {
+            throw new InstanceNotActivityException();
+        }
+        mContext = context.getApplicationContext();
+        mExitReceiver = new ExitReceiver((Activity) context);
     }
 
     public void registerReceiver() {
         if (!mReceiverRegistered) {
             IntentFilter filter = new IntentFilter();
             filter.addAction(EXIT_APP_RECEIVER);
-            mActivity.registerReceiver(mExitReceiver, filter);
+            mContext.registerReceiver(mExitReceiver, filter);
             mReceiverRegistered = true;
         }
     }
@@ -39,7 +42,7 @@ public class ExitAppHelper {
     public void unregisterReceiver() {
         if (mReceiverRegistered) {
             mReceiverRegistered = false;
-            mActivity.unregisterReceiver(mExitReceiver);
+            mContext.unregisterReceiver(mExitReceiver);
         }
     }
 
@@ -69,6 +72,13 @@ public class ExitAppHelper {
                     activity.finish();
                 }
             }
+        }
+    }
+
+
+    public static class InstanceNotActivityException extends RuntimeException {
+        public InstanceNotActivityException() {
+            super("Please deliver the Activity's Context");
         }
     }
 }

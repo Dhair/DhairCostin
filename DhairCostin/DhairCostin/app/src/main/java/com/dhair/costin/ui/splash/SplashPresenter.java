@@ -1,5 +1,6 @@
 package com.dhair.costin.ui.splash;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import com.dhair.costin.ui.base.BasePresenter;
@@ -10,6 +11,10 @@ import com.dhair.costin.ui.base.MvpView;
  * Email: deng.shengjin@zuimeia.com
  */
 public class SplashPresenter extends BasePresenter {
+    public SplashPresenter(Context context) {
+        super(context);
+    }
+
     @Override
     public void attachView(MvpView mvpView) {
 

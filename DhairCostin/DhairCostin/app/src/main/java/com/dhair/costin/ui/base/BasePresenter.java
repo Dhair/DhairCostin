@@ -1,11 +1,18 @@
 package com.dhair.costin.ui.base;
 
+import android.content.Context;
+
 /**
  * Creator: dengshengjin on 16/1/11 11:20
  * Email: deng.shengjin@zuimeia.com
  */
 public abstract class BasePresenter<V extends MvpView> implements Presenter<V> {
     private V mMvpView;
+    private Context mContext;
+
+    public BasePresenter(Context context) {
+        mContext = context;
+    }
 
     @Override
     public void attachView(V mvpView) {
