@@ -1,4 +1,4 @@
-package com.dhair.costin.ui.enter;
+package com.dhair.costin.ui.splash;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -16,25 +16,25 @@ import butterknife.Bind;
  * Creator: dengshengjin on 16/1/11 11:28
  * Email: deng.shengjin@zuimeia.com
  */
-public class EnterActivity extends BaseActivity<EnterPresenter> {
+public class SplashActivity extends BaseActivity<SplashPresenter> {
     @Bind(R.id.textview)
     TextView mTextView;
     private ExitAppHelper mExitAppHelper;
 
     @Nullable
     @Override
-    protected EnterPresenter createPresenter(Context context) {
-        return new EnterPresenter();
+    protected SplashPresenter createPresenter(Context context) {
+        return new SplashPresenter();
     }
 
     @Override
     protected int getContentView() {
-        return R.layout.activity_enter;
+        return R.layout.activity_splash;
     }
 
     @Override
     protected void initData() {
-        mExitAppHelper = new ExitAppHelper(EnterActivity.this);
+        mExitAppHelper = new ExitAppHelper(SplashActivity.this);
     }
 
     @Override
@@ -52,7 +52,7 @@ public class EnterActivity extends BaseActivity<EnterPresenter> {
     @Override
     protected void initWidgets() {
         mTextView.setText(new Hello().say());
-        mTextView.setOnClickListener(v -> startActivity(HomeActivity.getStartIntent(EnterActivity.this)));
+        mTextView.setOnClickListener(v -> startActivity(HomeActivity.getStartIntent(SplashActivity.this)));
     }
 
     @Override

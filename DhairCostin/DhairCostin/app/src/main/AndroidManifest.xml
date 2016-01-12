@@ -12,7 +12,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="com.dhair.costin.ui.enter.EnterActivity"
+            android:name="com.dhair.costin.ui.splash.SplashActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait">
             <intent-filter>

@@ -1,4 +1,4 @@
-package com.dhair.costin.ui.enter;
+package com.dhair.costin.ui.splash;
 
 /**
  * Created by jixin.jia on 15/11/5.

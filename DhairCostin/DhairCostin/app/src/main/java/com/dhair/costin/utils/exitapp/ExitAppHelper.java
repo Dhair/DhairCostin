@@ -8,7 +8,7 @@ import android.content.IntentFilter;
 import android.os.Handler;
 import android.os.Looper;
 
-import com.dhair.costin.ui.enter.EnterActivity;
+import com.dhair.costin.ui.splash.SplashActivity;
 
 import java.lang.ref.WeakReference;
 
@@ -44,7 +44,7 @@ public class ExitAppHelper {
     }
 
     public static void exitAppFinally(Context mContext) {
-        Intent intent = new Intent(mContext, EnterActivity.class);
+        Intent intent = new Intent(mContext, SplashActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         mContext.startActivity(intent);

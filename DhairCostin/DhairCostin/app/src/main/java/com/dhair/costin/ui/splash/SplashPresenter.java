@@ -1,4 +1,4 @@
-package com.dhair.costin.ui.enter;
+package com.dhair.costin.ui.splash;
 
 import android.os.Bundle;
 
@@ -9,7 +9,7 @@ import com.dhair.costin.ui.base.MvpView;
  * Creator: dengshengjin on 16/1/11 11:28
  * Email: deng.shengjin@zuimeia.com
  */
-public class EnterPresenter extends BasePresenter {
+public class SplashPresenter extends BasePresenter {
     @Override
     public void attachView(MvpView mvpView) {
 
