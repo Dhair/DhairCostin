@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-apply plugin: "com.dhair.hotfix" //Hotfix
+//apply plugin: "com.dhair.hotfix" //Hotfix
 apply plugin: 'com.neenbedankt.android-apt' // AutoLayout、Dragger
 apply plugin: 'me.tatarka.retrolambda' //retrolambda
 
@@ -27,8 +27,6 @@ android {
 
     buildTypes {
         debug {
-            minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             debuggable true
             versionNameSuffix ".dev"
         }
@@ -72,7 +70,7 @@ dependencies {
     //Uninstall
     compile project(':UninstallWatcher')
     //Hotfix
-    compile project(':Hotfix')
+//    compile project(':Hotfix')
     //AutoLayout
     compile project(':autolayout_api')
     //AutoLayout
@@ -89,7 +87,7 @@ dependencies {
     //butterknife
     compile 'com.jakewharton:butterknife:7.0.1'
     //Log
-//    compile 'com.jakewharton.timber:timber:4.1.0'
+    compile 'com.github.orhanobut:logger:1.12'
     //RXJava
     compile 'io.reactivex:rxjava:1.1.0'
     compile 'io.reactivex:rxandroid:1.1.0'
