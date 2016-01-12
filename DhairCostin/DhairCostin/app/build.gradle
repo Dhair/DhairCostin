@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-//apply plugin: "com.dhair.hotfix" //Hotfix
+apply plugin: "com.dhair.hotfix" //Hotfix
 apply plugin: 'com.neenbedankt.android-apt' // AutoLayout、Dragger
 apply plugin: 'me.tatarka.retrolambda' //retrolambda
 
@@ -70,7 +70,7 @@ dependencies {
     //Uninstall
     compile project(':UninstallWatcher')
     //Hotfix
-//    compile project(':Hotfix')
+    compile project(':Hotfix')
     //AutoLayout
     compile project(':autolayout_api')
     //AutoLayout

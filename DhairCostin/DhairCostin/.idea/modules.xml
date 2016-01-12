@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/Hotfix/Hotfix.iml" filepath="$PROJECT_DIR$/Hotfix/Hotfix.iml" />
       <module fileurl="file://$PROJECT_DIR$/UninstallWatcher/UninstallWatcher.iml" filepath="$PROJECT_DIR$/UninstallWatcher/UninstallWatcher.iml" />
       <module fileurl="file://$PROJECT_DIR$/../AndroidCommonPlugin/android_common_library/android_common_library.iml" filepath="$PROJECT_DIR$/../AndroidCommonPlugin/android_common_library/android_common_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../AndroidCommonPlugin/android_common_process/android_common_process.iml" filepath="$PROJECT_DIR$/../AndroidCommonPlugin/android_common_process/android_common_process.iml" />
       <module fileurl="file://$PROJECT_DIR$/../VideoRecorderPlugin/android_common_process/android_common_process.iml" filepath="$PROJECT_DIR$/../VideoRecorderPlugin/android_common_process/android_common_process.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/../AutoLayoutPlugin/autolayout_api/autolayout_api.iml" filepath="$PROJECT_DIR$/../AutoLayoutPlugin/autolayout_api/autolayout_api.iml" />
