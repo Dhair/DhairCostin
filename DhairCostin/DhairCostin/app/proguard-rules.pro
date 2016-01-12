@@ -33,7 +33,7 @@
 -keep class cn.dhair.hotfix.** { *; }
 
 # Retrofit rules
--dontwarn retrofit2.**
+-dontwarn retrofit.**
 -keep class retrofit.** { *; }
 -keepattributes Signature
 -keepattributes Exceptions
