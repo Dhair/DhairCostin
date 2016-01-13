@@ -2,7 +2,6 @@ package com.dhair.costin.injection.component;
 
 import android.app.Activity;
 
-import com.dhair.costin.data.local.DataHelper;
 import com.dhair.costin.injection.PerActivity;
 import com.dhair.costin.injection.module.ActivityModule;
 import com.dhair.costin.ui.splash.SplashActivity;
@@ -20,5 +19,4 @@ public interface ActivityComponent {//Scope其实就是一个Component的对象�
 
     void inject(SplashActivity splashActivity);
 
-    DataHelper dataHelper();
 }

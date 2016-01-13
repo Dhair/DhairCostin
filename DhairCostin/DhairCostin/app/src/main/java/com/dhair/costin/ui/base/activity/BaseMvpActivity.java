@@ -1,9 +1,12 @@
-package com.dhair.costin.ui.base;
+package com.dhair.costin.ui.base.activity;
 
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
+
+import com.dhair.costin.ui.base.BasePresenter;
+import com.dhair.costin.ui.base.MvpView;
 
 import butterknife.ButterKnife;
 

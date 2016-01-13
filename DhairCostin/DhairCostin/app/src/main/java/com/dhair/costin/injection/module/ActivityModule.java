@@ -3,7 +3,6 @@ package com.dhair.costin.injection.module;
 import android.app.Activity;
 import android.content.Context;
 
-import com.dhair.costin.data.local.DataHelper;
 import com.dhair.costin.injection.ActivityContext;
 import com.dhair.costin.injection.PerActivity;
 
@@ -32,12 +31,6 @@ public class ActivityModule {
     @ActivityContext
     Context providesContext() {//提供ActivityContext的具体实现
         return mActivity;
-    }
-
-    @Provides
-    @PerActivity
-    DataHelper providerDataHelper(Activity activity){
-        return new DataHelper(activity);
     }
 
 }

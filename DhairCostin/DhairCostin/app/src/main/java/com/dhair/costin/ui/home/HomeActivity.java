@@ -6,7 +6,7 @@ import android.support.annotation.NonNull;
 import android.view.KeyEvent;
 
 import com.dhair.costin.R;
-import com.dhair.costin.ui.base.BaseMvpActivity;
+import com.dhair.costin.ui.base.activity.BaseMvpActivity;
 import com.dhair.costin.utils.exitapp.ExitAppHelper;
 
 /**

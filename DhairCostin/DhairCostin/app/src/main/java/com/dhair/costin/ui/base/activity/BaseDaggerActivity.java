@@ -1,4 +1,4 @@
-package com.dhair.costin.ui.base;
+package com.dhair.costin.ui.base.activity;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -12,12 +12,13 @@ import com.dhair.costin.application.CostinApplication;
 import com.dhair.costin.injection.component.ActivityComponent;
 import com.dhair.costin.injection.component.DaggerActivityComponent;
 import com.dhair.costin.injection.module.ActivityModule;
+import com.dhair.costin.ui.base.fragment.HashComponent;
 
 /**
  * Creator: dengshengjin on 16/1/12 23:10
  * Email: deng.shengjin@zuimeia.com
  */
-public abstract class BaseDaggerActivity extends AppCompatActivity {
+public abstract class BaseDaggerActivity extends AppCompatActivity implements HashComponent<ActivityComponent> {
     private ActivityComponent mActivityComponent;
     private Handler mHandler;
 
@@ -63,5 +64,10 @@ public abstract class BaseDaggerActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         mActivityComponent = null;
+    }
+
+    @Override
+    public ActivityComponent getComponent() {
+        return mActivityComponent;
     }
 }

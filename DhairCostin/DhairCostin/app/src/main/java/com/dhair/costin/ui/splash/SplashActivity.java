@@ -5,9 +5,8 @@ import android.support.annotation.Nullable;
 import android.widget.TextView;
 
 import com.dhair.costin.R;
-import com.dhair.costin.data.local.DataHelper;
 import com.dhair.costin.data.local.DataManager;
-import com.dhair.costin.ui.base.BaseMvpActivity;
+import com.dhair.costin.ui.base.activity.BaseMvpActivity;
 import com.dhair.costin.ui.home.HomeActivity;
 
 import javax.inject.Inject;
@@ -24,8 +23,6 @@ public class SplashActivity extends BaseMvpActivity<SplashPresenter> {
 
     @Inject
     DataManager mDataManager;
-    @Inject
-    DataHelper mDataHelper;
 
     @Nullable
     @Override
@@ -47,7 +44,6 @@ public class SplashActivity extends BaseMvpActivity<SplashPresenter> {
     protected void initWidgets() {
         mTextView.setText(new Hello().say());
         mDataManager.print(getActivityComponent().activity().toString() + ",");
-        mDataHelper.print();
         mTextView.setOnClickListener(v -> startActivity(HomeActivity.getStartIntent(SplashActivity.this)));
     }
 
