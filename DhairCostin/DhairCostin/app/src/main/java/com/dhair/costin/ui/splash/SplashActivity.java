@@ -5,8 +5,11 @@ import android.support.annotation.Nullable;
 import android.widget.TextView;
 
 import com.dhair.costin.R;
-import com.dhair.costin.ui.base.BaseActivity;
+import com.dhair.costin.data.local.DataManager;
+import com.dhair.costin.ui.base.BaseMvpActivity;
 import com.dhair.costin.ui.home.HomeActivity;
+
+import javax.inject.Inject;
 
 import butterknife.Bind;
 
@@ -14,9 +17,12 @@ import butterknife.Bind;
  * Creator: dengshengjin on 16/1/11 11:28
  * Email: deng.shengjin@zuimeia.com
  */
-public class SplashActivity extends BaseActivity<SplashPresenter> {
+public class SplashActivity extends BaseMvpActivity<SplashPresenter> {
     @Bind(R.id.textview)
     TextView mTextView;
+
+    @Inject
+    DataManager mDataManager;
 
     @Nullable
     @Override
@@ -31,12 +37,13 @@ public class SplashActivity extends BaseActivity<SplashPresenter> {
 
     @Override
     protected void initData() {
-
+        getActivityComponent().inject(this);
     }
 
     @Override
     protected void initWidgets() {
         mTextView.setText(new Hello().say());
+        mDataManager.print();
         mTextView.setOnClickListener(v -> startActivity(HomeActivity.getStartIntent(SplashActivity.this)));
     }
 

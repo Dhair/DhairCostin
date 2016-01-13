@@ -25,7 +25,7 @@ public interface ApplicationComponent {
     @ApplicationContext
     Context context();
 
-    WallpaperService getWallpaperService();
+    WallpaperService wallpaperService();
 
     Application application();
 }

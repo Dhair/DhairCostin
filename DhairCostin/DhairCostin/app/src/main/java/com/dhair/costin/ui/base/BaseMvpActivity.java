@@ -2,11 +2,8 @@ package com.dhair.costin.ui.base;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 
 import butterknife.ButterKnife;
 
@@ -14,9 +11,8 @@ import butterknife.ButterKnife;
  * Creator: dengshengjin on 16/1/11 11:20
  * Email: deng.shengjin@zuimeia.com
  */
-public abstract class BaseActivity<P extends BasePresenter> extends AppCompatActivity implements MvpView {
+public abstract class BaseMvpActivity<P extends BasePresenter> extends BaseDaggerActivity implements MvpView {
     private P mPresenter;
-    private Handler mHandler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,17 +71,6 @@ public abstract class BaseActivity<P extends BasePresenter> extends AppCompatAct
             getPresenter().detachView(!isFinishing());
         }
         ButterKnife.unbind(this);
-    }
-
-    protected Handler getHandler() {
-        if (mHandler == null) {
-            synchronized (this) {
-                if (mHandler == null) {
-                    mHandler = new Handler(Looper.getMainLooper());
-                }
-            }
-        }
-        return mHandler;
     }
 
     @Nullable //annotation 方便IDE提示

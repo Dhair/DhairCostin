@@ -54,4 +54,5 @@ public class SplashPresenter extends BasePresenter {
     public void onDestroy() {
 
     }
+
 }

@@ -8,6 +8,7 @@ import javax.inject.Scope;
 /**
  * Creator: dengshengjin on 16/1/12 20:56
  * Email: deng.shengjin@zuimeia.com
+ * 限制作用域
  */
 @Scope
 @Retention(RetentionPolicy.RUNTIME)

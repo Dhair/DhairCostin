@@ -2,6 +2,7 @@ package com.dhair.costin.injection.component;
 
 import com.dhair.costin.injection.ActivityScope;
 import com.dhair.costin.injection.module.ActivityModule;
+import com.dhair.costin.ui.splash.SplashActivity;
 
 import dagger.Component;
 
@@ -13,4 +14,5 @@ import dagger.Component;
 @Component(dependencies = ApplicationComponent.class, modules = ActivityModule.class)
 public interface ActivityComponent {
 
+    void inject(SplashActivity splashActivity);
 }

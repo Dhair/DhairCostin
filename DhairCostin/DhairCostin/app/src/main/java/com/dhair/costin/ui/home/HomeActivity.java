@@ -6,15 +6,14 @@ import android.support.annotation.NonNull;
 import android.view.KeyEvent;
 
 import com.dhair.costin.R;
-import com.dhair.costin.ui.base.BaseActivity;
-import com.dhair.costin.ui.base.BasePresenter;
+import com.dhair.costin.ui.base.BaseMvpActivity;
 import com.dhair.costin.utils.exitapp.ExitAppHelper;
 
 /**
  * Creator: dengshengjin on 16/1/11 10:30
  * Email: deng.shengjin@zuimeia.com
  */
-public class HomeActivity extends BaseActivity {
+public class HomeActivity extends BaseMvpActivity<HomePresenter> {
 
 
     public static Intent getStartIntent(Context context) {
@@ -49,7 +48,7 @@ public class HomeActivity extends BaseActivity {
 
     @NonNull
     @Override
-    protected BasePresenter createPresenter(Context context) {
+    protected HomePresenter createPresenter(Context context) {
         return new HomePresenter(context);
     }
 

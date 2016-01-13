@@ -2,6 +2,7 @@ package com.dhair.costin.application;
 
 import android.app.Application;
 import android.content.Context;
+import android.support.annotation.NonNull;
 
 import com.dhair.common.process.ProcessManager;
 import com.dhair.costin.BuildConfig;
@@ -19,7 +20,8 @@ import com.orhanobut.logger.Logger;
  */
 public class CostinApplication extends Application {
     private static final String URL = "http://www.baidu.com";
-    ApplicationComponent mApplicationComponent;
+    private ApplicationComponent mApplicationComponent;
+    private final static String TAG = CostinApplication.class.getSimpleName();
 
     @Override
     protected void attachBaseContext(Context base) {
@@ -31,14 +33,19 @@ public class CostinApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        Logger.init();
+        Logger.init(TAG);
         if (BuildConfig.DEBUG) {
-            Logger.e("isMyProcessInTheForeground " + ProcessManager.isMyProcessInTheForeground());
+            ProcessManager.isMyProcessInTheForeground();
         }
 
         Watcher.run(this, URL, true);
 
         initApplicationComponent();
+
+    }
+
+    public static CostinApplication getApplication(@NonNull Context context) {
+        return (CostinApplication) context.getApplicationContext();
     }
 
     private void initApplicationComponent() {
