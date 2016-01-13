@@ -87,13 +87,13 @@ public abstract class BaseDaggerActivity extends AppCompatActivity implements Ha
         super.onStart();
     }
 
-    public void onPostCreate(Bundle savedInstanceState) {//onCreate方法彻底执行完毕的回调
-        super.onPostCreate(savedInstanceState);
-    }
-
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
+    }
+
+    public void onPostCreate(Bundle savedInstanceState) {//onCreate方法彻底执行完毕的回调
+        super.onPostCreate(savedInstanceState);
     }
 
     @Override
@@ -126,4 +126,13 @@ public abstract class BaseDaggerActivity extends AppCompatActivity implements Ha
         super.onDestroy();
         mActivityComponent = null;
     }
+
+    //启动Activity:onCreate -> onContentChanged -> onStart -> onPostCreate -> onResume -> onPostResume
+    //被覆盖      :onPause -> onSaveInstanceState -> onStop
+    //重新进入    :onRestart -> onStart -> onResume -> onPostResume
+    //点击后退    :onPause -> onStop -> onDestroy
+    //按Home     :onPause -> onSaveInstance -> onStop
+    //开启不保留活动Home:onPause ->onSaveInstance -> onStop -> onDestroy
+    //开启不保留活动重新进入:onCreate -> onContentChanged -> onStart -> onRestoreInstanceState -> onPostCreate -> onResume -> onPostResume
+
 }
