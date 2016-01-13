@@ -1,15 +1,15 @@
-package com.dhair.costin.injection;
+package com.dhair.costin.injection.scope;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-import javax.inject.Qualifier;
+import javax.inject.Scope;
 
 /**
- * Creator: dengshengjin on 16/1/12 20:18
+ * Creator: dengshengjin on 16/1/13 17:17
  * Email: deng.shengjin@zuimeia.com
  */
-@Qualifier
+@Scope
 @Retention(RetentionPolicy.RUNTIME)
-public @interface ApplicationContext {
+public @interface UserScope {
 }

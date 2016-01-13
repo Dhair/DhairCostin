@@ -5,9 +5,14 @@ import android.support.annotation.Nullable;
 import android.widget.TextView;
 
 import com.dhair.costin.R;
+import com.dhair.costin.application.CostinApplication;
 import com.dhair.costin.data.local.DataManager;
+import com.dhair.costin.data.model.UserModel;
 import com.dhair.costin.ui.base.activity.BaseMvpActivity;
 import com.dhair.costin.ui.home.HomeActivity;
+import com.orhanobut.logger.Logger;
+
+import java.util.Calendar;
 
 import javax.inject.Inject;
 
@@ -44,11 +49,26 @@ public class SplashActivity extends BaseMvpActivity<SplashPresenter> {
     protected void initWidgets() {
         mTextView.setText(new Hello().say());
         mDataManager.print(getActivityComponent().activity().toString() + ",");
-        mTextView.setOnClickListener(v -> startActivity(HomeActivity.getStartIntent(SplashActivity.this)));
+        mTextView.setOnClickListener(v -> {
+            startActivity(HomeActivity.getStartIntent(SplashActivity.this));
+        });
+
+        UserModel userModel = new UserModel();
+        long timeInMillis = Calendar.getInstance().getTimeInMillis();
+        userModel.setUserId(timeInMillis);
+        userModel.setUsername("User " + timeInMillis);
+        Logger.e("Splash " + userModel.toString());
+        CostinApplication.getApplication(getApplicationContext()).createUserComponent(userModel);
     }
 
     @Override
     protected void initActions() {
 
+    }
+
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        finish();
     }
 }

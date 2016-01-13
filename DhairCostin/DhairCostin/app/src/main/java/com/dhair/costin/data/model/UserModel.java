@@ -56,4 +56,12 @@ public class UserModel implements Parcelable {
             return new UserModel[size];
         }
     };
+
+    @Override
+    public String toString() {
+        return "UserModel{" +
+                "mUserId=" + mUserId +
+                ", mUsername='" + mUsername + '\'' +
+                '}';
+    }
 }

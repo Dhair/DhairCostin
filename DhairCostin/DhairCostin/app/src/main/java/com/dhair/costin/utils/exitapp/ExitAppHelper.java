@@ -8,9 +8,12 @@ import android.content.IntentFilter;
 import android.os.Handler;
 import android.os.Looper;
 
-import com.dhair.costin.ui.splash.SplashActivity;
+import com.dhair.costin.injection.context.ActivityContext;
+import com.dhair.costin.ui.home.HomeActivity;
 
 import java.lang.ref.WeakReference;
+
+import javax.inject.Inject;
 
 /**
  * Creator: dengshengjin on 16/1/11 14:35
@@ -22,7 +25,8 @@ public class ExitAppHelper {
     private boolean mReceiverRegistered;
     private static final String EXIT_APP_RECEIVER = "ExitAppReceiver";
 
-    public ExitAppHelper(Context context) {
+    @Inject
+    public ExitAppHelper(@ActivityContext Context context) {
         if (!(context instanceof Activity)) {
             throw new InstanceNotActivityException();
         }
@@ -47,7 +51,7 @@ public class ExitAppHelper {
     }
 
     public static void exitAppFinally(Context mContext) {
-        Intent intent = new Intent(mContext, SplashActivity.class);
+        Intent intent = new Intent(mContext, HomeActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         mContext.startActivity(intent);

@@ -3,7 +3,7 @@ package com.dhair.costin.data.local;
 import android.content.Context;
 
 import com.dhair.costin.data.remote.WallpaperService;
-import com.dhair.costin.injection.ApplicationContext;
+import com.dhair.costin.injection.context.ApplicationContext;
 import com.orhanobut.logger.Logger;
 
 import javax.inject.Inject;

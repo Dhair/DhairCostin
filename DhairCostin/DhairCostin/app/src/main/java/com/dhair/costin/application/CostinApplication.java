@@ -6,9 +6,13 @@ import android.support.annotation.NonNull;
 
 import com.dhair.common.process.ProcessManager;
 import com.dhair.costin.BuildConfig;
+import com.dhair.costin.data.model.UserModel;
 import com.dhair.costin.injection.component.ApplicationComponent;
 import com.dhair.costin.injection.component.DaggerApplicationComponent;
+import com.dhair.costin.injection.component.DaggerUserComponent;
+import com.dhair.costin.injection.component.UserComponent;
 import com.dhair.costin.injection.module.ApplicationModule;
+import com.dhair.costin.injection.module.UserModule;
 import com.dhair.hotfix.DhairHotFix;
 import com.dhair.uninstall.watcher.Watcher;
 import com.orhanobut.logger.Logger;
@@ -21,6 +25,7 @@ import com.orhanobut.logger.Logger;
 public class CostinApplication extends Application {
     private static final String URL = "http://www.baidu.com";
     private ApplicationComponent mApplicationComponent;
+    private UserComponent mUserComponent;
     private final static String TAG = CostinApplication.class.getSimpleName();
 
     @Override
@@ -59,8 +64,19 @@ public class CostinApplication extends Application {
         return mApplicationComponent;
     }
 
-    public void setApplicationComponent(ApplicationComponent applicationComponent) {
-        mApplicationComponent = applicationComponent;
+    public UserComponent createUserComponent(UserModel userModel) {
+        mUserComponent = DaggerUserComponent.builder()
+                .applicationComponent(mApplicationComponent)
+                .userModule(new UserModule(userModel))
+                .build();
+        return mUserComponent;
     }
 
+    public UserComponent getUserComponent() {
+        return mUserComponent;
+    }
+
+    public void releaseUserComponent() {
+        mUserComponent = null;
+    }
 }

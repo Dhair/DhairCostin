@@ -4,6 +4,7 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Build;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
@@ -60,14 +61,69 @@ public abstract class BaseDaggerActivity extends AppCompatActivity implements Ha
         return getApplicationContext();
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        mActivityComponent = null;
-    }
 
     @Override
     public ActivityComponent getComponent() {
         return mActivityComponent;
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public void onContentChanged() {//即setContentView()或者addContentView()方法执行完毕时就会调用该方法
+        super.onContentChanged();
+    }
+
+    @Override
+    protected void onRestart() {//onStop后重新回来
+        super.onRestart();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    public void onPostCreate(Bundle savedInstanceState) {//onCreate方法彻底执行完毕的回调
+        super.onPostCreate(savedInstanceState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPostResume() {//onResume方法彻底执行完毕的回调
+        super.onPostResume();
+    }
+
+    @Override
+    protected void onPause() {//整个窗口被半遮盖或者半透明的时候会执行，
+        super.onPause();
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {//按下Home
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onStop() {//在整个窗口被完全遮盖才会触发, 触发onStop的方法之前必定会触发onPause方法
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mActivityComponent = null;
     }
 }

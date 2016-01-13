@@ -1,4 +1,4 @@
-package com.dhair.costin.injection;
+package com.dhair.costin.injection.scope;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -6,11 +6,10 @@ import java.lang.annotation.RetentionPolicy;
 import javax.inject.Scope;
 
 /**
- * Creator: dengshengjin on 16/1/12 20:56
+ * Creator: dengshengjin on 16/1/13 17:17
  * Email: deng.shengjin@zuimeia.com
- * 限制作用域
  */
 @Scope
 @Retention(RetentionPolicy.RUNTIME)
-public @interface PerActivity {
+public @interface FragmentScope {
 }

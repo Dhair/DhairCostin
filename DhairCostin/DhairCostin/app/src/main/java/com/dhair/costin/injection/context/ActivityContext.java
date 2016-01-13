@@ -1,4 +1,4 @@
-package com.dhair.costin.injection;
+package com.dhair.costin.injection.context;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
