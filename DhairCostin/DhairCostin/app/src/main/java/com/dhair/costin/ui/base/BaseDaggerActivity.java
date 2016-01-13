@@ -55,7 +55,13 @@ public abstract class BaseDaggerActivity extends AppCompatActivity {
         return mHandler;
     }
 
-    protected Context getContext(){
+    protected Context getContext() {
         return getApplicationContext();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mActivityComponent = null;
     }
 }

@@ -40,7 +40,7 @@ public class CostinApplication extends Application {
 
         Watcher.run(this, URL, true);
 
-        initApplicationComponent();
+        setupApplicationComponent();
 
     }
 
@@ -48,7 +48,7 @@ public class CostinApplication extends Application {
         return (CostinApplication) context.getApplicationContext();
     }
 
-    private void initApplicationComponent() {
+    private void setupApplicationComponent() {
         mApplicationComponent = DaggerApplicationComponent.builder()
                 .applicationModule(new ApplicationModule(this))
                 .build();

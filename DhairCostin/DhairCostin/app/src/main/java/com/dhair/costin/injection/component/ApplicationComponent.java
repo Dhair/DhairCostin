@@ -23,7 +23,7 @@ public interface ApplicationComponent {
     void inject(CostinApplication costinApplication);
 
     @ApplicationContext
-    Context context();
+    Context context(); //提供ApplicationContext
 
     WallpaperService wallpaperService();
 

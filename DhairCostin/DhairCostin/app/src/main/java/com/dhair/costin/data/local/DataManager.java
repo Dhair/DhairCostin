@@ -3,7 +3,7 @@ package com.dhair.costin.data.local;
 import android.content.Context;
 
 import com.dhair.costin.data.remote.WallpaperService;
-import com.dhair.costin.injection.ActivityContext;
+import com.dhair.costin.injection.ApplicationContext;
 import com.orhanobut.logger.Logger;
 
 import javax.inject.Inject;
@@ -18,12 +18,12 @@ public class DataManager {
     private WallpaperService mWallpaperService;
 
     @Inject
-    public DataManager(@ActivityContext Context context, WallpaperService wallpaperService) {
+    public DataManager(@ApplicationContext Context context, WallpaperService wallpaperService) {
         mContext = context;
         mWallpaperService = wallpaperService;
     }
 
-    public void print() {
-        Logger.e("Splash Presenter print" + mWallpaperService+","+mContext.toString());
+    public void print(String s) {
+        Logger.e("Splash Presenter print" + mWallpaperService+","+mContext.toString()+","+s);
     }
 }

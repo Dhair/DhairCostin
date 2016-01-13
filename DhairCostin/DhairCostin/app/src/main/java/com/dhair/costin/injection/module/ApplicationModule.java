@@ -24,19 +24,20 @@ public class ApplicationModule {
     }
 
     @Provides
-    Application providerApplication() {
+    @Singleton
+    Application providerApplication() {//提供Application 的具体实现
         return mApplication;
     }
 
     @Provides
     @ApplicationContext
-    Context providerContext() {
+    Context providerContext() {//提供ApplicationContext的具体实现
         return mApplication;
     }
 
     @Provides
     @Singleton
-    WallpaperService provideWallpaperService() {
+    WallpaperService provideWallpaperService() {//提供WallpaperService的具体实现
         return WallpaperService.Factory.makeService(mApplication);
     }
 }
