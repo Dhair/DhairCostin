@@ -88,7 +88,7 @@ public abstract class BaseDaggerActivity extends AppCompatActivity implements Ha
     }
 
     @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {//内存不足再次进入时
         super.onRestoreInstanceState(savedInstanceState);
     }
 
@@ -112,7 +112,7 @@ public abstract class BaseDaggerActivity extends AppCompatActivity implements Ha
     }
 
     @Override
-    protected void onSaveInstanceState(Bundle outState) {//按下Home
+    protected void onSaveInstanceState(Bundle outState) {//在整个窗口被完全遮盖才会触发
         super.onSaveInstanceState(outState);
     }
 
