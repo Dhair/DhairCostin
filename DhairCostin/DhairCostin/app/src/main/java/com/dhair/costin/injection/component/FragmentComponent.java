@@ -12,7 +12,7 @@ import dagger.Component;
  * Email: deng.shengjin@zuimeia.com
  */
 @FragmentScope
-@Component(modules = FragmentModule.class)
+@Component(dependencies = ApplicationComponent.class, modules = FragmentModule.class)
 public interface FragmentComponent {
     Fragment fragment();
 }

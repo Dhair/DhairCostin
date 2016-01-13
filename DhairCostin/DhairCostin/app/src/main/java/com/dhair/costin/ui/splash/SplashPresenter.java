@@ -11,6 +11,7 @@ import com.dhair.costin.ui.base.MvpView;
  * Email: deng.shengjin@zuimeia.com
  */
 public class SplashPresenter extends BasePresenter {
+
     public SplashPresenter(Context context) {
         super(context);
     }
@@ -47,11 +48,6 @@ public class SplashPresenter extends BasePresenter {
 
     @Override
     public void onStop() {
-
-    }
-
-    @Override
-    public void onDestroy() {
 
     }
 

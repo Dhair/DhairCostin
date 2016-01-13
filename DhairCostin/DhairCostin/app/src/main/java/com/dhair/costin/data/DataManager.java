@@ -1,17 +1,23 @@
-package com.dhair.costin.data.local;
+package com.dhair.costin.data;
 
 import android.content.Context;
 
+import com.dhair.costin.data.model.Wallpaper;
 import com.dhair.costin.data.remote.WallpaperService;
 import com.dhair.costin.injection.context.ApplicationContext;
-import com.orhanobut.logger.Logger;
+
+import java.util.List;
 
 import javax.inject.Inject;
+import javax.inject.Singleton;
+
+import rx.Observable;
 
 /**
  * Creator: dengshengjin on 16/1/10 18:26
  * Email: deng.shengjin@zuimeia.com
  */
+@Singleton
 public class DataManager {
 
     private Context mContext;
@@ -23,7 +29,7 @@ public class DataManager {
         mWallpaperService = wallpaperService;
     }
 
-    public void print(String s) {
-        Logger.e("Splash Presenter print" + mWallpaperService+","+mContext.toString()+","+s);
+    public Observable<List<Wallpaper>> queryWallpapers(long startTime, int page, int pageSize) {
+        return mWallpaperService.queryWallpaper(startTime, page, pageSize);
     }
 }

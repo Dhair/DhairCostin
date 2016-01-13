@@ -7,4 +7,7 @@ import com.dhair.costin.ui.base.MvpView;
  * Email: deng.shengjin@zuimeia.com
  */
 public class HomeMvpView implements MvpView {
+    public void queryWallpapers() {
+
+    }
 }

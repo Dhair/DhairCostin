@@ -3,7 +3,6 @@ package com.dhair.costin.injection.module;
 import android.app.Application;
 import android.content.Context;
 
-import com.dhair.costin.data.remote.WallpaperService;
 import com.dhair.costin.injection.context.ApplicationContext;
 
 import javax.inject.Singleton;
@@ -34,11 +33,5 @@ public class ApplicationModule {
     @ApplicationContext
     Context providerContext() {//提供ApplicationContext的具体实现
         return mApplication;
-    }
-
-    @Provides
-    @Singleton
-    WallpaperService provideWallpaperService() {//提供WallpaperService的具体实现
-        return WallpaperService.Factory.makeService(mApplication);
     }
 }

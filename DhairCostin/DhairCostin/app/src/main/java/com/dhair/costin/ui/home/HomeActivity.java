@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.view.KeyEvent;
+import android.widget.TextView;
 
 import com.dhair.costin.R;
 import com.dhair.costin.application.CostinApplication;
@@ -12,9 +13,10 @@ import com.dhair.costin.data.model.UserModel;
 import com.dhair.costin.injection.component.UserComponent;
 import com.dhair.costin.ui.base.activity.BaseMvpActivity;
 import com.dhair.costin.utils.exitapp.ExitAppHelper;
-import com.orhanobut.logger.Logger;
 
 import javax.inject.Inject;
+
+import butterknife.Bind;
 
 /**
  * Creator: dengshengjin on 16/1/11 10:30
@@ -24,6 +26,9 @@ public class HomeActivity extends BaseMvpActivity<HomePresenter> {
 
     @Inject
     ExitAppHelper mExitAppHelper;
+
+    @Bind(R.id.retrofit)
+    TextView mRetrofitText;
 
     public static Intent getStartIntent(Context context) {
         Intent intent = new Intent(context, HomeActivity.class);
@@ -54,7 +59,7 @@ public class HomeActivity extends BaseMvpActivity<HomePresenter> {
 
     @Override
     protected void initWidgets() {
-
+        mRetrofitText.setOnClickListener(v -> getPresenter().queryWallpapers());
     }
 
     @Override
@@ -71,7 +76,6 @@ public class HomeActivity extends BaseMvpActivity<HomePresenter> {
                 if (userComponent != null) {
                     UserModel userModel = userComponent.userModel();
                     if (userModel != null) {
-                        Logger.e("HomeActivity " + userModel.toString());
                         costinApplication.releaseUserComponent();
                     }
                 }

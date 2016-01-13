@@ -5,8 +5,11 @@ import android.os.Bundle;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 
+import com.dhair.costin.data.DataManager;
 import com.dhair.costin.ui.base.BasePresenter;
 import com.dhair.costin.ui.base.MvpView;
+
+import javax.inject.Inject;
 
 import butterknife.ButterKnife;
 
@@ -16,6 +19,8 @@ import butterknife.ButterKnife;
  */
 public abstract class BaseMvpActivity<P extends BasePresenter> extends BaseDaggerActivity implements MvpView {
     private P mPresenter;
+    @Inject
+    DataManager mDataManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +36,10 @@ public abstract class BaseMvpActivity<P extends BasePresenter> extends BaseDagge
         initData();
         initWidgets();
         initActions();
+
+        if (getPresenter() != null) {
+            getPresenter().setupDataManager(mDataManager);
+        }
     }
 
     @Override
