@@ -51,6 +51,7 @@ public class SplashActivity extends BaseMvpActivity<SplashPresenter> {
         mDataManager.print(getActivityComponent().activity().toString() + ",");
         mTextView.setOnClickListener(v -> {
             startActivity(HomeActivity.getStartIntent(SplashActivity.this));
+            finish();
         });
 
         UserModel userModel = new UserModel();
@@ -64,11 +65,5 @@ public class SplashActivity extends BaseMvpActivity<SplashPresenter> {
     @Override
     protected void initActions() {
 
-    }
-
-    @Override
-    protected void onPostResume() {
-        super.onPostResume();
-        finish();
     }
 }
