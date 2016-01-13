@@ -20,7 +20,6 @@ import com.dhair.costin.injection.module.ActivityModule;
 public abstract class BaseDaggerActivity extends AppCompatActivity {
     private ActivityComponent mActivityComponent;
     private Handler mHandler;
-    private Context mContext;
 
     protected ActivityComponent getActivityComponent() {
         if (mActivityComponent == null) {
