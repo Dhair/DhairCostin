@@ -1,8 +1,6 @@
 package com.dhair.costin.data.remote;
 
-import com.dhair.costin.data.model.Wallpaper;
-
-import java.util.List;
+import org.json.JSONObject;
 
 import retrofit.http.GET;
 import retrofit.http.Query;
@@ -15,6 +13,6 @@ import rx.Observable;
 public interface WallpaperService {
 
     @GET("/wallpaper/category/1/")
-    Observable<List<Wallpaper>> queryWallpaper(@Query("time") long startTime, @Query("page_size") int pageSize, @Query("tz") int timeZone);
+    Observable<JSONObject> queryWallpaper(@Query("time") long startTime, @Query("page_size") int pageSize, @Query("tz") int timeZone);
 
 }

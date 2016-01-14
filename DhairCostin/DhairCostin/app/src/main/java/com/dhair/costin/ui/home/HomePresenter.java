@@ -9,7 +9,7 @@ import com.orhanobut.logger.Logger;
 
 import java.util.List;
 
-import rx.Observer;
+import rx.Subscriber;
 import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
@@ -50,24 +50,28 @@ public class HomePresenter extends BasePresenter<HomeMvpView> {
     }
 
     public void queryWallpapers() {
-        Subscription subscription = getDataManager().queryWallpapers(0, 1, 30)
+        //http://stackoverflow.com/questions/22240406/rxjava-how-to-compose-multiple-observables-with-dependencies-and-collect-all-re
+        Subscription subscription = getDataManager().queryWallpapers(0, 30, 8)
                 .subscribeOn(Schedulers.newThread())
                 .observeOn(AndroidSchedulers.mainThread())
+                .doOnNext(jsonObject -> {
+                    Logger.e("Observable doOnNext");
+                })
+                .map(jsonObject -> Wallpaper.parse(jsonObject.optJSONArray("images")))
                 .subscribeOn(Schedulers.io())
-                .subscribe(new Observer<List<Wallpaper>>() {
+                .subscribe(new Subscriber<List<Wallpaper>>() {
                     @Override
                     public void onCompleted() {
-                        Logger.e("queryWallpapers complete");
+                        Logger.e("Observable onCompleted");
                     }
 
                     @Override
                     public void onError(Throwable e) {
-                        Logger.e("queryWallpapers onError" + e.toString());
                     }
 
                     @Override
                     public void onNext(List<Wallpaper> wallpapers) {
-
+                        Logger.e("Observable onNext");
                     }
                 });
         bindSubscription(subscription);

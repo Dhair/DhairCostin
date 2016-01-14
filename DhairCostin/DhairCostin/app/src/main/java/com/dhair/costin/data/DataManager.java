@@ -2,11 +2,10 @@ package com.dhair.costin.data;
 
 import android.content.Context;
 
-import com.dhair.costin.data.model.Wallpaper;
 import com.dhair.costin.data.remote.WallpaperService;
 import com.dhair.costin.injection.context.ApplicationContext;
 
-import java.util.List;
+import org.json.JSONObject;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
@@ -29,7 +28,7 @@ public class DataManager {
         mWallpaperService = wallpaperService;
     }
 
-    public Observable<List<Wallpaper>> queryWallpapers(long startTime, int page, int pageSize) {
+    public Observable<JSONObject> queryWallpapers(long startTime, int page, int pageSize) {
         return mWallpaperService.queryWallpaper(startTime, page, pageSize);
     }
 }
