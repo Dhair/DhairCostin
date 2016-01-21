@@ -1,26 +1,37 @@
 package com.dhair.costin.ui.base.activity;
 
 import android.content.Context;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
+import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 
+import com.dhair.common.library.util.PhoneUtil;
+import com.dhair.costin.R;
 import com.dhair.costin.data.DataManager;
 import com.dhair.costin.ui.base.BasePresenter;
 import com.dhair.costin.ui.base.MvpView;
 
 import javax.inject.Inject;
 
+import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
  * Creator: dengshengjin on 16/1/11 11:20
  * Email: deng.shengjin@zuimeia.com
  */
-public abstract class BaseMvpActivity<P extends BasePresenter> extends BaseDaggerActivity implements MvpView {
+public abstract class BaseMvpActivity<P extends BasePresenter> extends BaseDaggerActivity implements MvpView, IStatusBar {
     private P mPresenter;
     @Inject
     DataManager mDataManager;
+
+    @Bind(R.id.status_bar_box)
+    ViewGroup mStatusBarBox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,11 +45,43 @@ public abstract class BaseMvpActivity<P extends BasePresenter> extends BaseDagge
         setContentView(getContentView());
         ButterKnife.bind(this);
         initData();
+        initAbsWidgets();
+        updateStatusBarColorV21();
         initWidgets();
         initActions();
 
         if (getPresenter() != null) {
             getPresenter().setupDataManager(mDataManager);
+        }
+    }
+
+    private void initAbsWidgets() {
+        updateStatusBarHeightV19();
+        updateActionBarColorV19();
+        updateStatusBarColorV21();
+    }
+
+    private void updateStatusBarHeightV19() {
+        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.KITKAT && !PhoneUtil.isFullScreen(this)) {
+            ViewGroup.LayoutParams lp = mStatusBarBox.getLayoutParams();
+            lp.height = PhoneUtil.getStatusBarHeight(getApplicationContext());
+            mStatusBarBox.requestLayout();
+        }
+    }
+
+    private void updateActionBarColorV19() {
+        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.KITKAT) {
+            if (getSupportActionBar() != null) {
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimary)));
+            }
+        }
+    }
+
+    private void updateStatusBarColorV21() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP && getStatusBarColor() > 0) {
+            Window window = getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setStatusBarColor(getStatusBarColor());
         }
     }
 
@@ -100,4 +143,11 @@ public abstract class BaseMvpActivity<P extends BasePresenter> extends BaseDagge
     protected abstract void initWidgets();
 
     protected abstract void initActions();
+
+    @Override
+    public int getStatusBarColor() {
+        return 0;
+    }
+
+
 }

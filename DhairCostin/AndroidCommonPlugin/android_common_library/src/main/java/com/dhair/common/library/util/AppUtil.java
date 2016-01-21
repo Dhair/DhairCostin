@@ -5,4 +5,10 @@ package com.dhair.common.library.util;
  * Email: deng.shengjin@zuimeia.com
  */
 public class AppUtil {
+    public static void main(String[] args) {
+        String text = "sfdsfsfss";
+        if (text.equals(null)) {
+
+        }
+    }
 }

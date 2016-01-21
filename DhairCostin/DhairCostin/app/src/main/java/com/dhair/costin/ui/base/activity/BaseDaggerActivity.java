@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
 
 import com.dhair.costin.application.CostinApplication;
 import com.dhair.costin.injection.component.ActivityComponent;
@@ -135,4 +136,25 @@ public abstract class BaseDaggerActivity extends AppCompatActivity implements Ha
     //开启不保留活动Home:onPause ->onSaveInstance -> onStop -> onDestroy
     //开启不保留活动重新进入:onCreate -> onContentChanged -> onStart -> onRestoreInstanceState -> onPostCreate -> onResume -> onPostResume
 
+
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return super.dispatchTouchEvent(ev);
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        return super.onTouchEvent(event);
+    }
+
+    @Override
+    public void onUserInteraction() {
+        // dispatchKeyEvent 实体back home menu
+        // dispatchKeyShortcutEvent 调度快捷键的事件
+        // dispatchTouchEvent(ActionDown)
+        // dispatchTrackballEvent 通过轨迹球移动事件下到集中视图。
+        // dispatchGenericMotionEvent 派遣一个通用的移动事件
+        //performUserLeaving
+        super.onUserInteraction();
+    }
 }
