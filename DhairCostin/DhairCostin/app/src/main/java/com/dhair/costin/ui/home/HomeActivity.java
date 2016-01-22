@@ -32,6 +32,7 @@ public class HomeActivity extends BaseMvpActivity<HomePresenter> {
 
     public static Intent getStartIntent(Context context) {
         Intent intent = new Intent(context, HomeActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         return intent;
     }
 

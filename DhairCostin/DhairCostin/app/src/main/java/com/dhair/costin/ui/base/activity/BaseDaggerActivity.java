@@ -1,12 +1,14 @@
 package com.dhair.costin.ui.base.activity;
 
 import android.annotation.TargetApi;
+import android.app.ActivityManager;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.support.v4.app.ActivityManagerCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 
@@ -157,4 +159,34 @@ public abstract class BaseDaggerActivity extends AppCompatActivity implements Ha
         //performUserLeaving
         super.onUserInteraction();
     }
+
+    protected boolean isLowRamDevice() {
+        ActivityManager activityManager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+        return ActivityManagerCompat.isLowRamDevice(activityManager);
+    }
+
+    @Override
+    public void onLowMemory() {//已经没有后台进程
+        super.onLowMemory();
+    }
+
+    //4.0 add
+    //TRIM_MEMORY_COMPLETE 内存不足，并且该进程在后台进程列表最后一个，马上就要被清理
+    //TRIM_MEMORY_MODERATE 内存不足，并且该进程在后台进程列表的中部
+    //TRIM_MEMORY_BACKGROUND 内存不足，并且该进程是后台进程
+    //TRIM_MEMORY_UI_HIDDEN 内存不足，并且该进程的UI已经不可见了
+    //4.1 add
+    //TRIM_MEMORY_RUNNING_CRITICAL 内存不足(后台进程不足3个)，并且该进程优先级比较高，需要清理内存
+    //TRIM_MEMORY_RUNNING_LOW 内存不足(后台进程不足5个)，并且该进程优先级比较高，需要清理内存
+    //TRIM_MEMORY_RUNNING_MODERATE 内存不足(后台进程超过5个)，并且该进程优先级比较高，需要清理内存
+
+    @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
+    @Override
+    public void onTrimMemory(int level) {//4.0之后的API
+        super.onTrimMemory(level);
+    }
+
+    //1，OnLowMemory被回调时，已经没有后台进程；而onTrimMemory被回调时，还有后台进程。
+    //2，OnLowMemory是在最后一个后台进程被杀时调用，一般情况是low memory killer 杀进程后触发；而OnTrimMemory的触发更频繁，每次计算进程优先级时，只要满足条件，都会触发。
+    //3，通过一键清理后，OnLowMemory不会被触发，而OnTrimMemory会被触发一次。
 }

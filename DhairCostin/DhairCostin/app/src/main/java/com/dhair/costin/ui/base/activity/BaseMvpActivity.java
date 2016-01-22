@@ -6,9 +6,12 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
+import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.FrameLayout;
 
 import com.dhair.common.library.util.PhoneUtil;
 import com.dhair.costin.R;
@@ -33,6 +36,10 @@ public abstract class BaseMvpActivity<P extends BasePresenter> extends BaseDagge
     @Bind(R.id.status_bar_box)
     ViewGroup mStatusBarBox;
 
+    FrameLayout mAbsBox;
+
+    private LayoutInflater mInflater;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,11 +49,11 @@ public abstract class BaseMvpActivity<P extends BasePresenter> extends BaseDagge
         if (getPresenter() != null) {
             getPresenter().attachView(this);
         }
-        setContentView(getContentView());
+        setContentView(R.layout.activity_abs);
+        initAbsData();
+        initAbsWidgets();
         ButterKnife.bind(this);
         initData();
-        initAbsWidgets();
-        updateStatusBarColorV21();
         initWidgets();
         initActions();
 
@@ -55,10 +62,15 @@ public abstract class BaseMvpActivity<P extends BasePresenter> extends BaseDagge
         }
     }
 
+    private void initAbsData() {
+        mInflater = LayoutInflater.from(getApplicationContext());
+    }
+
     private void initAbsWidgets() {
         updateStatusBarHeightV19();
         updateActionBarColorV19();
         updateStatusBarColorV21();
+        updateAbsContentView();
     }
 
     private void updateStatusBarHeightV19() {
@@ -72,7 +84,7 @@ public abstract class BaseMvpActivity<P extends BasePresenter> extends BaseDagge
     private void updateActionBarColorV19() {
         if (Build.VERSION.SDK_INT == Build.VERSION_CODES.KITKAT) {
             if (getSupportActionBar() != null) {
-                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimary)));
+                getSupportActionBar().setBackgroundDrawable(new ColorDrawable(ContextCompat.getColor(getApplicationContext(), R.color.colorPrimary)));
             }
         }
     }
@@ -83,6 +95,11 @@ public abstract class BaseMvpActivity<P extends BasePresenter> extends BaseDagge
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.setStatusBarColor(getStatusBarColor());
         }
+    }
+
+    private void updateAbsContentView() {
+        mAbsBox = (FrameLayout) findViewById(R.id.abs_box);
+        mAbsBox.addView(mInflater.inflate(getContentView(), mAbsBox, false));
     }
 
     @Override
@@ -148,6 +165,5 @@ public abstract class BaseMvpActivity<P extends BasePresenter> extends BaseDagge
     public int getStatusBarColor() {
         return 0;
     }
-
 
 }

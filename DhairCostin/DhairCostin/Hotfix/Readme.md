@@ -9,6 +9,7 @@ System.out.println(Hack.class);
 
 同时通过将自定义ClassLoader的顺序放入最前面，这样就可以把修复好的代码放在sdcard中被动态读入
 
+0、App需要混淆
 1、Build -> Clean Project
 2、Run project
 3、备份 app/build/outputs/dhair 至 Hotfix/hotfix/dhair

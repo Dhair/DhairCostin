@@ -1,32 +1,27 @@
 package com.dhair.costin.ui.splash;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Message;
 import android.support.annotation.Nullable;
-import android.widget.TextView;
 
 import com.dhair.costin.R;
 import com.dhair.costin.application.CostinApplication;
-import com.dhair.costin.data.DataManager;
 import com.dhair.costin.data.model.UserModel;
 import com.dhair.costin.ui.base.activity.BaseMvpActivity;
 import com.dhair.costin.ui.home.HomeActivity;
+import com.dhair.costin.utils.handler.AbsDispatchMessage;
+import com.dhair.costin.utils.handler.DispatchHandler;
 
 import java.util.Calendar;
-
-import javax.inject.Inject;
-
-import butterknife.Bind;
 
 /**
  * Creator: dengshengjin on 16/1/11 11:28
  * Email: deng.shengjin@zuimeia.com
  */
 public class SplashActivity extends BaseMvpActivity<SplashPresenter> {
-    @Bind(R.id.textview)
-    TextView mTextView;
-
-    @Inject
-    DataManager mDataManager;
+    private DispatchHandler<AbsDispatchMessage> mDispatchHandler;
+    private final static int HANDLE_DELAY = 1 << 1;
 
     @Nullable
     @Override
@@ -46,12 +41,6 @@ public class SplashActivity extends BaseMvpActivity<SplashPresenter> {
 
     @Override
     protected void initWidgets() {
-        mTextView.setText(new Hello().say());
-        mTextView.setOnClickListener(v -> {
-            startActivity(HomeActivity.getStartIntent(SplashActivity.this));
-            finish();
-        });
-
         UserModel userModel = new UserModel();
         long timeInMillis = Calendar.getInstance().getTimeInMillis();
         userModel.setUserId(timeInMillis);
@@ -61,6 +50,31 @@ public class SplashActivity extends BaseMvpActivity<SplashPresenter> {
 
     @Override
     protected void initActions() {
+        mDispatchHandler = new DispatchHandler<>(new AbsDispatchMessage() {
 
+            @Override
+            public void handleMessage(Message msg) {
+                switch (msg.what) {
+                    case HANDLE_DELAY:
+                        Intent intent = HomeActivity.getStartIntent(getContext());
+                        startActivity(intent);
+
+                        break;
+                }
+            }
+        });
+        mDispatchHandler.sendEmptyMessageDelayed(HANDLE_DELAY, 1000);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        finish();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mDispatchHandler.removeMessages(HANDLE_DELAY);
     }
 }
