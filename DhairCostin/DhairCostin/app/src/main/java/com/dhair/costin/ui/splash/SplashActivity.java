@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Message;
 import android.support.annotation.Nullable;
 
+import com.dhair.common.library.util.DHairActivityCompact;
 import com.dhair.costin.R;
 import com.dhair.costin.application.CostinApplication;
 import com.dhair.costin.data.model.UserModel;
@@ -22,6 +23,7 @@ import java.util.Calendar;
 public class SplashActivity extends BaseMvpActivity<SplashPresenter> {
     private DispatchHandler<AbsDispatchMessage> mDispatchHandler;
     private final static int HANDLE_DELAY = 1 << 1;
+    private final static int HANDLE_FINISH = 1 << 2;
 
     @Nullable
     @Override
@@ -57,8 +59,11 @@ public class SplashActivity extends BaseMvpActivity<SplashPresenter> {
                 switch (msg.what) {
                     case HANDLE_DELAY:
                         Intent intent = HomeActivity.getStartIntent(getContext());
-                        startActivity(intent);
-
+                        DHairActivityCompact.startActivityWithCustomAnim(SplashActivity.this, intent, R.anim.slide_right_in, R.anim.slide_none);
+                        mDispatchHandler.sendEmptyMessageDelayed(HANDLE_FINISH, 400);
+                        break;
+                    case HANDLE_FINISH:
+                        finish();
                         break;
                 }
             }
@@ -66,15 +71,17 @@ public class SplashActivity extends BaseMvpActivity<SplashPresenter> {
         mDispatchHandler.sendEmptyMessageDelayed(HANDLE_DELAY, 1000);
     }
 
+
     @Override
     protected void onPause() {
         super.onPause();
-        finish();
+//        finish();
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         mDispatchHandler.removeMessages(HANDLE_DELAY);
+        mDispatchHandler.removeMessages(HANDLE_FINISH);
     }
 }
