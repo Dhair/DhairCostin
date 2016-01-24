@@ -4,8 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
 import android.view.KeyEvent;
-import android.widget.TextView;
 
 import com.dhair.costin.R;
 import com.dhair.costin.application.CostinApplication;
@@ -27,8 +27,8 @@ public class HomeActivity extends BaseMvpActivity<HomePresenter> {
     @Inject
     ExitAppHelper mExitAppHelper;
 
-    @Bind(R.id.retrofit)
-    TextView mRetrofitText;
+    @Bind(R.id.navigation_view)
+    NavigationView mNavigationView;
 
     public static Intent getStartIntent(Context context) {
         Intent intent = new Intent(context, HomeActivity.class);
@@ -60,7 +60,8 @@ public class HomeActivity extends BaseMvpActivity<HomePresenter> {
 
     @Override
     protected void initWidgets() {
-        mRetrofitText.setOnClickListener(v -> getPresenter().queryWallpapers());
+        mNavigationView.inflateHeaderView(R.layout.navigation_header);
+        mNavigationView.inflateMenu(R.menu.navigation_menu);
     }
 
     @Override

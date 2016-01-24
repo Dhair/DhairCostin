@@ -82,10 +82,11 @@ dependencies {
     compile project(':android_common_library')
     compile project(':android_common_process')
     //Retrofit
-    compile "com.squareup.retrofit:retrofit:2.0.0-beta2"
-    compile "com.squareup.retrofit:converter-gson:2.0.0-beta2"//不使用json
-    compile "com.squareup.retrofit:adapter-rxjava:2.0.0-beta2"
-    compile "com.squareup.okhttp:okhttp:2.7.0"
+    compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
+    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+    //不使用json
+    compile 'com.squareup.retrofit:adapter-rxjava:2.0.0-beta2'
+    compile 'com.squareup.okhttp:okhttp:2.7.0'
     //butterknife
     compile 'com.jakewharton:butterknife:7.0.1'
     //Log
@@ -94,7 +95,14 @@ dependencies {
     compile 'io.reactivex:rxjava:1.1.0'
     compile 'io.reactivex:rxandroid:1.1.0'
     //Dagger
-    compile "com.google.dagger:dagger:2.0.2"
+    compile 'com.google.dagger:dagger:2.0.2'
     apt "com.google.dagger:dagger-compiler:2.0.2"
-    provided 'org.glassfish:javax.annotation:10.0-b28' //Required by Dagger2
+    //Required by Dagger2
+    provided 'org.glassfish:javax.annotation:10.0-b28'
+    //Min 22.2.0
+    compile 'com.android.support:design:23.1.1'
+    //Min 21
+    compile 'com.android.support:cardview-v7:23.1.1'
+    //Min 21
+    compile 'com.android.support:recyclerview-v7:23.1.1'
 }

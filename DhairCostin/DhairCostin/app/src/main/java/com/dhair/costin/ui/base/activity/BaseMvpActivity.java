@@ -21,7 +21,6 @@ import com.dhair.costin.ui.base.MvpView;
 
 import javax.inject.Inject;
 
-import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
@@ -32,13 +31,6 @@ public abstract class BaseMvpActivity<P extends BasePresenter> extends BaseDagge
     private P mPresenter;
     @Inject
     DataManager mDataManager;
-
-    @Bind(R.id.status_bar_box)
-    ViewGroup mStatusBarBox;
-
-    FrameLayout mAbsBox;
-
-    private LayoutInflater mInflater;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +55,6 @@ public abstract class BaseMvpActivity<P extends BasePresenter> extends BaseDagge
     }
 
     private void initAbsData() {
-        mInflater = LayoutInflater.from(getApplicationContext());
     }
 
     private void initAbsWidgets() {
@@ -75,9 +66,12 @@ public abstract class BaseMvpActivity<P extends BasePresenter> extends BaseDagge
 
     private void updateStatusBarHeightV19() {
         if (Build.VERSION.SDK_INT == Build.VERSION_CODES.KITKAT && !PhoneUtil.isFullScreen(this)) {
-            ViewGroup.LayoutParams lp = mStatusBarBox.getLayoutParams();
-            lp.height = PhoneUtil.getStatusBarHeight(getApplicationContext());
-            mStatusBarBox.requestLayout();
+            ViewGroup mStatusBarBox = (ViewGroup) findViewById(R.id.status_bar_box);
+            if (mStatusBarBox != null) {
+                ViewGroup.LayoutParams lp = mStatusBarBox.getLayoutParams();
+                lp.height = PhoneUtil.getStatusBarHeight(getApplicationContext());
+                mStatusBarBox.requestLayout();
+            }
         }
     }
 
@@ -98,8 +92,11 @@ public abstract class BaseMvpActivity<P extends BasePresenter> extends BaseDagge
     }
 
     private void updateAbsContentView() {
-        mAbsBox = (FrameLayout) findViewById(R.id.abs_box);
-        mAbsBox.addView(mInflater.inflate(getContentView(), mAbsBox, false));
+        FrameLayout mAbsBox = (FrameLayout) findViewById(R.id.abs_box);
+        if (mAbsBox != null) {
+            LayoutInflater mInflater = LayoutInflater.from(BaseMvpActivity.this);
+            mAbsBox.addView(mInflater.inflate(getContentView(), mAbsBox, false));
+        }
     }
 
     @Override
