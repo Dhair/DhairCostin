@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="navigation_fit_system_window">false</bool>
+    <bool name="navigation_under_status_bar">true</bool>
+</resources>

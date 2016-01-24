@@ -23,7 +23,6 @@ import java.util.Calendar;
 public class SplashActivity extends BaseMvpActivity<SplashPresenter> {
     private DispatchHandler<AbsDispatchMessage> mDispatchHandler;
     private final static int HANDLE_DELAY = 1 << 1;
-    private final static int HANDLE_FINISH = 1 << 2;
 
     @Nullable
     @Override
@@ -60,10 +59,6 @@ public class SplashActivity extends BaseMvpActivity<SplashPresenter> {
                     case HANDLE_DELAY:
                         Intent intent = HomeActivity.getStartIntent(getContext());
                         DHairActivityCompact.startActivityWithCustomAnim(SplashActivity.this, intent, R.anim.slide_right_in, R.anim.slide_none);
-                        mDispatchHandler.sendEmptyMessageDelayed(HANDLE_FINISH, 400);
-                        break;
-                    case HANDLE_FINISH:
-                        finish();
                         break;
                 }
             }
@@ -75,13 +70,12 @@ public class SplashActivity extends BaseMvpActivity<SplashPresenter> {
     @Override
     protected void onPause() {
         super.onPause();
-//        finish();
+        finish();
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         mDispatchHandler.removeMessages(HANDLE_DELAY);
-        mDispatchHandler.removeMessages(HANDLE_FINISH);
     }
 }
