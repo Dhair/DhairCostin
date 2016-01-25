@@ -1,8 +1,8 @@
 package com.dhair.costin.ui.base.fragment;
 
-import android.app.Fragment;
 import android.os.Handler;
 import android.os.Looper;
+import android.support.v4.app.Fragment;
 
 /**
  * Creator: dengshengjin on 16/1/13 14:58

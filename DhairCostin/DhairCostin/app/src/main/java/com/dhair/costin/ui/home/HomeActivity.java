@@ -5,7 +5,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -21,6 +26,7 @@ import com.dhair.costin.application.CostinApplication;
 import com.dhair.costin.data.model.UserModel;
 import com.dhair.costin.injection.component.UserComponent;
 import com.dhair.costin.ui.base.activity.BaseMvpActivity;
+import com.dhair.costin.ui.home.presenter.HomePresenter;
 import com.dhair.costin.utils.exitapp.ExitAppHelper;
 
 import javax.inject.Inject;
@@ -44,6 +50,14 @@ public class HomeActivity extends BaseMvpActivity<HomePresenter> {
 
     @Bind(R.id.drawer_layout)
     DrawerLayout mDrawerLayout;
+
+    @Bind(R.id.tab_layout)
+    TabLayout mTabLayout;
+
+    @Bind(R.id.view_pager)
+    ViewPager mViewPager;
+
+    private ListPagerAdapter mPagerAdapter;
 
     public static Intent getStartIntent(Context context) {
         Intent intent = new Intent(context, HomeActivity.class);
@@ -70,6 +84,7 @@ public class HomeActivity extends BaseMvpActivity<HomePresenter> {
 
     @Override
     protected void initData() {
+        mPagerAdapter = new ListPagerAdapter(getSupportFragmentManager());
         getActivityComponent().inject(this);
     }
 
@@ -82,6 +97,10 @@ public class HomeActivity extends BaseMvpActivity<HomePresenter> {
         ActionBarDrawerToggle mActionBarDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, mToolbar, R.string.drawer_layout_open, R.string.drawer_layout_close);
         mActionBarDrawerToggle.syncState();
         mDrawerLayout.setDrawerListener(mActionBarDrawerToggle);
+
+        mViewPager.setAdapter(mPagerAdapter);
+        mTabLayout.setupWithViewPager(mViewPager);
+        mTabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);//设置TabLayout的Tab操作屏幕可滚动
     }
 
     private void updateActionBar() {
@@ -146,5 +165,28 @@ public class HomeActivity extends BaseMvpActivity<HomePresenter> {
     protected void onDestroy() {
         super.onDestroy();
         mExitAppHelper.unregisterReceiver();
+    }
+
+    public static class ListPagerAdapter extends FragmentStatePagerAdapter {
+        private int mDefaultTab = 7;
+
+        public ListPagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            return HomeFragment.getInstance();
+        }
+
+        @Override
+        public int getCount() {
+            return mDefaultTab;
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return "Title" + position;
+        }
     }
 }

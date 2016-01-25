@@ -1,4 +1,4 @@
-package com.dhair.costin.ui.home;
+package com.dhair.costin.ui.home.view;
 
 import com.dhair.costin.ui.base.MvpView;
 

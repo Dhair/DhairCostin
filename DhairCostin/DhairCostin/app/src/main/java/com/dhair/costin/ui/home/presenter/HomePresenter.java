@@ -1,10 +1,11 @@
-package com.dhair.costin.ui.home;
+package com.dhair.costin.ui.home.presenter;
 
 import android.content.Context;
 import android.os.Bundle;
 
 import com.dhair.costin.data.model.Wallpaper;
 import com.dhair.costin.ui.base.BasePresenter;
+import com.dhair.costin.ui.home.view.HomeMvpView;
 import com.orhanobut.logger.Logger;
 
 import java.util.List;
