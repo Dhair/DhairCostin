@@ -1,76 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ffe354b-bb98-4839-81eb-ea2591ca6512" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/app/src/main/res/mipmap-hdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/app/src/main/res/mipmap-mdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/AutoLayoutApi/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/AutoLayoutCompiler/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/app/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DhairCostin/AutoLayout/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/app/src/main/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DhairCostin/AutoLayout/src/main/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/app/src/androidTest/java/com/dhair/autolayout/plugin/ApplicationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DhairCostin/AutoLayout/src/androidTest/java/com/dhair/autolayout/ApplicationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/AutoLayoutApi/src/main/java/com/dhair/autolayout/api/AutoLayout.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/app/src/test/java/com/dhair/autolayout/plugin/ExampleUnitTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DhairCostin/AutoLayout/src/test/java/com/dhair/autolayout/ExampleUnitTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/AutoLayoutApi/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/AutoLayoutCompiler/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/app/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DhairCostin/AutoLayout/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/app/src/main/res/values/colors.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/.idea/dictionaries/dengshengjin.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/gradle.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/.idea/gradle.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/gradlew.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/gradlew" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/AutoLayoutCompiler/proguard-rules.pro" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/app/proguard-rules.pro" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DhairCostin/AutoLayout/proguard-rules.pro" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/.idea/runConfigurations.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/settings.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/app/src/main/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DhairCostin/AutoLayout/src/main/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/app/src/main/res/values/styles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../AutoLayoutPlugin/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../DhairCostin/release/libs/com/dhair/hotfix/HotfixPlugin/1.1.0/HotfixPlugin-1.1.0-javadoc.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../DhairCostin/release/libs/com/dhair/hotfix/HotfixPlugin/1.1.0/HotfixPlugin-1.1.0-javadoc.jar.md5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../DhairCostin/release/libs/com/dhair/hotfix/HotfixPlugin/1.1.0/HotfixPlugin-1.1.0-javadoc.jar.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../DhairCostin/release/libs/com/dhair/hotfix/HotfixPlugin/1.1.0/HotfixPlugin-1.1.0-sources.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../DhairCostin/release/libs/com/dhair/hotfix/HotfixPlugin/1.1.0/HotfixPlugin-1.1.0-sources.jar.md5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../DhairCostin/release/libs/com/dhair/hotfix/HotfixPlugin/1.1.0/HotfixPlugin-1.1.0-sources.jar.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../DhairCostin/release/libs/com/dhair/hotfix/HotfixPlugin/1.1.0/HotfixPlugin-1.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../DhairCostin/release/libs/com/dhair/hotfix/HotfixPlugin/1.1.0/HotfixPlugin-1.1.0.jar.md5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../DhairCostin/release/libs/com/dhair/hotfix/HotfixPlugin/1.1.0/HotfixPlugin-1.1.0.jar.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../DhairCostin/release/libs/com/dhair/hotfix/HotfixPlugin/1.1.0/HotfixPlugin-1.1.0.pom" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../DhairCostin/release/libs/com/dhair/hotfix/HotfixPlugin/1.1.0/HotfixPlugin-1.1.0.pom.md5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../DhairCostin/release/libs/com/dhair/hotfix/HotfixPlugin/1.1.0/HotfixPlugin-1.1.0.pom.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../DhairCostin/release/libs/com/dhair/hotfix/HotfixPlugin/maven-metadata.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../DhairCostin/release/libs/com/dhair/hotfix/HotfixPlugin/maven-metadata.xml.md5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../DhairCostin/release/libs/com/dhair/hotfix/HotfixPlugin/maven-metadata.xml.sha1" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../DhairCostin/Hotfix/hotfix/dhair/qihoo/debug/hash.txt" afterPath="$PROJECT_DIR$/../DhairCostin/Hotfix/hotfix_backup/dhair/qihoo/debug/hash.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../DhairCostin/Hotfix/hotfix/dhair/qihoo/debug/mapping.txt" afterPath="$PROJECT_DIR$/../DhairCostin/Hotfix/hotfix_backup/dhair/qihoo/debug/mapping.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../DhairCostin/Hotfix/hotfix/dhair_hotfix_patch.jar" afterPath="$PROJECT_DIR$/../DhairCostin/Hotfix/hotfix_backup/dhair_hotfix_patch.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../DhairCostin/Hotfix/extras/Readme.md" afterPath="$PROJECT_DIR$/../DhairCostin/Hotfix/extras/Readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../DhairCostin/build.gradle" afterPath="$PROJECT_DIR$/../DhairCostin/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../DhairCostin/app/build.gradle" afterPath="$PROJECT_DIR$/../DhairCostin/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../DhairCostin/.idea/gradle.xml" afterPath="$PROJECT_DIR$/../DhairCostin/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../DhairCostin/.idea/modules.xml" afterPath="$PROJECT_DIR$/../DhairCostin/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../DhairCostin/settings.gradle" afterPath="$PROJECT_DIR$/../DhairCostin/settings.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="13ceb3c2-9c49-44c7-ad74-5934a1eb437b" name="Default" comment="" />
     <ignored path="HotfixPlugin.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -93,8 +24,12 @@
   <component name="FileEditorManager">
     <leaf />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="availableProjects">
@@ -123,6 +58,66 @@
           <value>
             <list>
               <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Publishes artifacts to bintray.com." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="bintrayUpload" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the main Groovy source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileGroovy" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the test Groovy source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileTestGroovy" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays the components produced by root project 'HotfixPlugin'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="components" />
@@ -138,6 +133,16 @@
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Generates the Maven POM file for publication 'mavenJava'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generatePomFileForMavenJavaPublication" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Groovydoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="groovydoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays a help message." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="help" />
@@ -148,9 +153,38 @@
                 <option name="name" value="init" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadocJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays the configuration model of root project 'HotfixPlugin'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processTestResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the sub-projects of root project 'HotfixPlugin'." />
@@ -163,9 +197,43 @@
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Publishes all publications produced by this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="publish" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Publishes Maven publication 'mavenJava' to the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="publishMavenJavaPublicationToMavenLocal" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Publishes all Maven publications produced by this project to the local Maven cache." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="publishToMavenLocal" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="sourcesJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays the tasks runnable from root project 'HotfixPlugin'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uploads all artifacts belonging to configuration ':archives'" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="uploadArchives" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates Gradle wrapper files. [incubating]" />
@@ -179,7 +247,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="1452258520000" />
+        <entry key="$PROJECT_DIR$" value="1452328102000" />
         <entry key="$USER_HOME$/TemporaryFiles/demo/android-collage-views-master" value="5664552797000" />
       </map>
     </option>
@@ -193,6 +261,188 @@
                   <entry key="$PROJECT_DIR$">
                     <value>
                       <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/1.4/48753e43ff29409fbbeadfb36186cbe27e41b179/commons-io-1.4-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/1.4/a8762d07e76cfde2395257a5da47ba7c1dbd3dce/commons-io-1.4.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/61e9f9d11fe3e12ec62f633006e99d75fd7f19c8/commons-codec-1.6-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/b7f0fc8f61ecadeb3695f0b9464755eee44374d4/commons-codec-1.6.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/gradle-core-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/groovy-all-2.4.4.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/asm-all-5.0.3.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/ant-1.9.3.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/commons-collections-3.2.1.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/commons-io-1.4.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/commons-lang-2.6.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/guava-jdk5-17.0.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/jcip-annotations-1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/jul-to-slf4j-1.7.10.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/jarjar-1.3.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/javax.inject-1.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/slf4j-api-1.7.10.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/log4j-over-slf4j-1.7.10.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/jcl-over-slf4j-1.7.10.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/ant-launcher-1.9.3.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/gradle-docs-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/gradle-model-core-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/gradle-base-services-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/gradle-base-services-groovy-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/gradle-model-groovy-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/gradle-cli-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/gradle-native-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/jna-3.2.7.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/native-platform-0.10.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/jansi-1.2.1.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/native-platform-osx-i386-0.10.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/native-platform-osx-amd64-0.10.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/native-platform-linux-amd64-0.10.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/native-platform-linux-i386-0.10.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/native-platform-windows-amd64-0.10.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/native-platform-windows-i386-0.10.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/native-platform-freebsd-i386-0.10.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/native-platform-freebsd-amd64-0.10.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/gradle-messaging-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/kryo-2.20.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/reflectasm-1.07-shaded.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/minlog-1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/objenesis-1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/gradle-resources-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-dependency-management-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/ivy-2.2.0.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gson-2.2.4.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/maven-core-3.0.4.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/xbean-reflect-3.4.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/bcprov-jdk15on-1.51.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/jsch-0.1.51.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/plexus-sec-dispatcher-1.3.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/aether-impl-1.13.1.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/aether-util-1.13.1.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/aether-spi-1.13.1.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/wagon-provider-api-2.4.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/maven-aether-provider-3.0.4.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/maven-repository-metadata-3.0.4.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/plexus-classworlds-2.4.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/aether-connector-wagon-1.13.1.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/maven-model-3.0.4.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/wagon-http-2.4.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/maven-settings-builder-3.0.4.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/maven-compat-3.0.4.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/plexus-component-annotations-1.5.5.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/maven-plugin-api-3.0.4.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/plexus-container-default-1.5.5.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/maven-artifact-3.0.4.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/plexus-interpolation-1.14.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/maven-settings-3.0.4.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/aether-api-1.13.1.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/plexus-cipher-1.7.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/wagon-file-2.4.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/maven-model-builder-3.0.4.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/plexus-utils-2.0.6.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/wagon-http-shared4-2.4.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-plugin-use-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-resources-http-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/httpclient-4.2.2.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/nekohtml-1.9.14.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/commons-codec-1.6.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/httpcore-4.2.2.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/jcifs-1.3.17.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/xml-apis-1.3.04.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/xercesImpl-2.9.1.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/gradle-tooling-api-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/gradle-wrapper-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-plugins-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/junit-4.12.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/testng-6.3.1.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/commons-cli-1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/bsh-2.0b4.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/jcommander-1.12.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/snakeyaml-1.6.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/hamcrest-core-1.3.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-code-quality-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-jetty-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/jetty-6.1.25.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/jetty-util-6.1.25.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/servlet-api-2.5-20081211.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/jetty-plus-6.1.25.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/jsp-2.1-6.1.14.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/jetty-annotations-6.1.25.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/geronimo-annotation_1.0_spec-1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/jetty-naming-6.1.25.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/core-3.1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/jsp-api-2.1-6.1.14.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-antlr-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-osgi-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/bndlib-2.4.0.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-maven-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/pmaven-common-0.8-20100325.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/pmaven-groovy-0.8-20100325.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-ide-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-announce-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-scala-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-sonar-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/sonar-batch-bootstrapper-2.9.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-signing-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/bcpg-jdk15on-1.51.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-ear-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-javascript-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/rhino-1.7R3.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/simple-4.1.21.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-build-comparison-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-diagnostics-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-reporting-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/jatl-0.2.2.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-publish-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-ivy-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-jacoco-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-build-init-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-platform-base-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-platform-jvm-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-language-jvm-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-language-java-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-language-groovy-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-language-scala-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-platform-native-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-platform-play-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-language-native-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-ide-native-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-testing-native-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-plugin-development-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-resources-sftp-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-resources-s3-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/aws-java-sdk-s3-1.9.19.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/aws-java-sdk-kms-1.9.19.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/aws-java-sdk-core-1.9.19.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/jackson-core-2.3.2.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/jackson-annotations-2.3.2.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/jackson-databind-2.3.2.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/joda-time-2.8.2.jar" />
+                            <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/lib/plugins/gradle-tooling-api-builders-2.8.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jfrog.bintray.gradle/gradle-bintray-plugin/1.4/37e7780aac43d6a2c643d315f8015c7244d34907/gradle-bintray-plugin-1.4-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jfrog.bintray.gradle/gradle-bintray-plugin/1.4/c9c2779b543eec72706349967debdeeefd0be46f/gradle-bintray-plugin-1.4.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy.modules.http-builder/http-builder/0.7.2/f1860181de06236f28f3f247aed57fa4631016d8/http-builder-0.7.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy.modules.http-builder/http-builder/0.7.2/323092cd786480311c1cf693770f9e6fc20a8bef/http-builder-0.7.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.2.1/6b27312b9c28b59aaeb6c21f3490045690c703d3/httpclient-4.2.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.2.1/b69bd03af60bf487b3ae1209a644ecac587bf6fc/httpclient-4.2.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.json-lib/json-lib/2.3/f35340c0a0380141f62c72b76c8fb4bfa638d8c1/json-lib-2.3-jdk15.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.nekohtml/nekohtml/1.9.16/2d40ea21fae95418331ddc66efb6744a38bf59a/nekohtml-1.9.16-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.nekohtml/nekohtml/1.9.16/61e35204e5a8fdb864152f84e2e3b33ab56f50ab/nekohtml-1.9.16.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xml-resolver/xml-resolver/1.2/6b72432ea1c5296783007365bb7c9a6b39dfb730/xml-resolver-1.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xml-resolver/xml-resolver/1.2/3d0f97750b3a03e0971831566067754ba4bfd68c/xml-resolver-1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.2.1/3f6caf5334fa83607b82e2f32dd128a9d8a0ea5e/httpcore-4.2.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.2.1/2d503272bf0a8b5f92d64db78b4ba9abbaccc6fd/httpcore-4.2.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.8.0/2818502bbb50bbcbd3f57e92a2bfe4d496f37688/commons-beanutils-1.8.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.8.0/c651d5103c649c12b20d53731643e5fffceb536/commons-beanutils-1.8.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.1/fa095ef874374e5b2a11f8b06c26a5d68c7cb3a4/commons-collections-3.2.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.1/761ea405b9b37ced573d2df0d1e3a4e0f9edc668/commons-collections-3.2.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.4/2b8c4b3035e45520ef42033e823c7d33e4b4402c/commons-lang-2.4-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.4/16313e02a793435009f1e458fa4af5d879f6fb11/commons-lang-2.4.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.ezmorph/ezmorph/1.0.6/298992280d62b944afd0ae9bfe3329f5487dd434/ezmorph-1.0.6-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.ezmorph/ezmorph/1.0.6/1e55d2a0253ea37745d33062852fd2c90027432/ezmorph-1.0.6.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xerces/xercesImpl/2.9.1/1136d197e2755bbde296ceee217ec5fe2917477b/xercesImpl-2.9.1.jar" />
+                          </list>
+                        </option>
                         <option name="path" value="$PROJECT_DIR$" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
@@ -328,38 +578,29 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/groovy/cn/jiajixin/nuwa/NuwaExtension.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/cn/jiajixin/nuwa/NuwaPlugin.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/cn/jiajixin/nuwa/util/NuwaAndroidUtils.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/cn/jiajixin/nuwa/util/NuwaFileUtils.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/cn/jiajixin/nuwa/util/NuwaSetUtils.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/cn/jiajixin/nuwa/util/NuwaProcessor.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/cn/jiajixin/nuwa/util/NuwaMapUtils.groovy" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/gradle-plugins/com.dhair.hotfix.plugin.properties" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/NuwaPlugin.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/DHairPlugin.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/DhairPlugin.groovy" />
-        <option value="$PROJECT_DIR$/Reame.md" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/util/DhairMapUtils.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/util/DhairFileUtils.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/DhairExtension.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/util/DhairProcessor.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/util/DhairSetUtils.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/util/DhairAndroidUtils.groovy" />
-        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/util/Plugins.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/util/D.groovy" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="NamedScopeManager">
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="465" />
-    <option name="y" value="29" />
+    <option name="x" value="-10" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="803" />
+    <option name="height" value="805" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -382,7 +623,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -401,13 +642,116 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HotfixPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HotfixPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gradle-plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HotfixPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HotfixPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HotfixPlugin" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HotfixPlugin" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.NonAndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.NonAndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gradle-plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HotfixPlugin" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HotfixPlugin" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.NonAndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.NonAndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HotfixPlugin" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HotfixPlugin" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.NonAndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.NonAndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="AndroidView">
-        <subPane />
-      </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -425,18 +769,34 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.1670412" />
-    <property name="last_opened_file_path" value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.2-all/1vevkra640w3rb9hkuw50q5we/gradle-2.2/lib/plugins" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ChatRoom/ChatRoom/compiler" />
+    <property name="recentsLimit" value="5" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="false" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/main" />
-    </key>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Remote.Unnamed">
+    <configuration default="false" name="All in HotfixPlugin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="HotfixPlugin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -528,7 +888,6 @@
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="JAR_PATH" value="$PROJECT_DIR$/release/libs/com/dhair/hotfix/dhair-hotfix-plugin/1.1.0/dhair-hotfix-plugin-1.1.0.jar" />
       <envs />
       <method />
     </configuration>
@@ -568,6 +927,27 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="false" name="Unnamed" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5005" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Remote.Unnamed" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.All in HotfixPlugin" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in HotfixPlugin" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="HTML_FILE_NAME" />
@@ -586,23 +966,26 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6ffe354b-bb98-4839-81eb-ea2591ca6512" name="Default" comment="" />
-      <created>1452258533861</created>
+      <changelist id="13ceb3c2-9c49-44c7-ad74-5934a1eb437b" name="Default" comment="" />
+      <created>1454047973637</created>
       <option name="number" value="Default" />
-      <updated>1452258533861</updated>
+      <updated>1454047973637</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="465" y="29" width="1440" height="803" extended-state="0" />
-    <editor active="false" />
+    <frame x="-10" y="23" width="1440" height="805" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27365357" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3280116" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -613,142 +996,66 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4041488" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32896653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32896653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3988355" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4041488" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27365357" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32896653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Reame.md">
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/util/Plugins.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="55" selection-start-line="63" selection-start-column="55" selection-end-line="63" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/DhairPlugin.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#33#70#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-2.2-bin/ca0flae0itb57he40lyj6fhpp/gradle-2.2/lib/gradle-core-2.2.jar!/org/gradle/api/plugins/ExtensionContainer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37313432">
-          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-2.2-bin/ca0flae0itb57he40lyj6fhpp/gradle-2.2/lib/asm-all-5.0.3.jar!/org/objectweb/asm/MethodVisitor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8306962">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/gradle-plugins/com.dhair.hotfix.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="50" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/DhairExtension.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12738854">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/util/DhairSetUtils.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/util/DhairMapUtils.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -756,158 +1063,74 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/DhairPlugin.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="173" column="32" selection-start-line="173" selection-start-column="32" selection-end-line="173" selection-end-column="32" />
-          <folding>
-            <element signature="e#33#70#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/util/DhairAndroidUtils.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.38846737">
-          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="68" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/util/DhairProcessor.groovy">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/gradle-plugins/com.dhair.hotfix.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0015174">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Reame.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18209408">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9426751">
-          <caret line="84" column="67" selection-start-line="84" selection-start-column="67" selection-end-line="84" selection-end-column="67" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="Copyright.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>HotfixPlugin</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/Reame.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/DhairExtension.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09104704">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/util/DhairSetUtils.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.046189375">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/util/D.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.034642033">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/util/Plugins.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/dhair/hotfix/plugin/DhairPlugin.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.038961038">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

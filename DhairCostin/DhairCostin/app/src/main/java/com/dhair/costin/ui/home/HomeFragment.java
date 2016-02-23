@@ -1,12 +1,15 @@
 package com.dhair.costin.ui.home;
 
 import android.content.Context;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.TextureView;
 import android.view.View;
+import android.widget.ListView;
 
 import com.dhair.costin.R;
 import com.dhair.costin.ui.base.fragment.BaseMvpFragment;
@@ -27,8 +30,11 @@ public class HomeFragment extends BaseMvpFragment<HomeListPresenter> implements 
     @Bind(R.id.recycler_view)
     RecyclerView mRecyclerView;
 
-    private HomeListAdapter mAdapter;
+    MediaPlayer mMediaPlayer;
 
+    private HomeListAdapter mAdapter;
+    TextureView mTextureView;
+    ListView mListView;
     public static HomeFragment getInstance() {
         HomeFragment fragment = new HomeFragment();
         return fragment;
@@ -38,6 +44,7 @@ public class HomeFragment extends BaseMvpFragment<HomeListPresenter> implements 
     @Override
     protected HomeListPresenter createPresenter(Context context) {
         return new HomeListPresenter(context);
+
     }
 
     @Override
@@ -55,6 +62,9 @@ public class HomeFragment extends BaseMvpFragment<HomeListPresenter> implements 
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.setLayoutManager(mLayoutManager);
+        mRecyclerView.requestLayout();
+//        mTextureView.setTransform(null);
+
     }
 
     @Override

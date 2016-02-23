@@ -17,6 +17,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -28,6 +29,7 @@ import com.dhair.costin.injection.component.UserComponent;
 import com.dhair.costin.ui.base.activity.BaseMvpActivity;
 import com.dhair.costin.ui.home.presenter.HomePresenter;
 import com.dhair.costin.utils.exitapp.ExitAppHelper;
+import com.orhanobut.logger.Logger;
 
 import javax.inject.Inject;
 
@@ -159,6 +161,19 @@ public class HomeActivity extends BaseMvpActivity<HomePresenter> {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_home, menu);
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_dialog) {
+            Logger.e("JobSchedulerService onOptionsItemSelected");
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

@@ -27,7 +27,6 @@ public class CostinApplication extends Application {
     private ApplicationComponent mApplicationComponent;
     private UserComponent mUserComponent;
     private final static String TAG = CostinApplication.class.getSimpleName();
-
     @Override
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);

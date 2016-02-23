@@ -61,6 +61,11 @@ public class CustomViewGroup extends ViewGroup {
     }
 
     @Override
+    protected void dispatchDraw(Canvas canvas) {
+        super.dispatchDraw(canvas);
+    }
+
+    @Override
     public boolean onTouchEvent(MotionEvent event) {
         Logger.e("CustomViewGroup onTouchEvent " + event.getAction());
         return super.onTouchEvent(event);
