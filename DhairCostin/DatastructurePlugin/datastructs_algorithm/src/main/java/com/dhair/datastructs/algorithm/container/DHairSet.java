@@ -1,9 +1,9 @@
 package com.dhair.datastructs.algorithm.container;
 
 /**
- * Creator: dengshengjin on 16/2/18 11:51
+ * Creator: dengshengjin on 16/2/25 11:08
  * Email: deng.shengjin@zuimeia.com
  */
-public class DHairMap {
+public class DHairSet {
 
 }

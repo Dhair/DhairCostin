@@ -20,6 +20,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.dhair.common.library.util.PhoneUtil;
 import com.dhair.costin.R;
@@ -28,6 +29,7 @@ import com.dhair.costin.data.model.UserModel;
 import com.dhair.costin.injection.component.UserComponent;
 import com.dhair.costin.ui.base.activity.BaseMvpActivity;
 import com.dhair.costin.ui.home.presenter.HomePresenter;
+import com.dhair.costin.ui.widget.touch.CustomView;
 import com.dhair.costin.utils.exitapp.ExitAppHelper;
 import com.orhanobut.logger.Logger;
 
@@ -58,6 +60,12 @@ public class HomeActivity extends BaseMvpActivity<HomePresenter> {
 
     @Bind(R.id.view_pager)
     ViewPager mViewPager;
+
+    @Bind(R.id.button)
+    Button mButton;
+
+    @Bind(R.id.custom_view)
+    CustomView mCustomView;
 
     private ListPagerAdapter mPagerAdapter;
 
@@ -103,6 +111,11 @@ public class HomeActivity extends BaseMvpActivity<HomePresenter> {
         mViewPager.setAdapter(mPagerAdapter);
         mTabLayout.setupWithViewPager(mViewPager);
         mTabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);//设置TabLayout的Tab操作屏幕可滚动
+
+        mButton.setOnClickListener(v -> {
+//            mCustomView.requestLayout();
+            mCustomView.invalidate();
+        });
     }
 
     private void updateActionBar() {
