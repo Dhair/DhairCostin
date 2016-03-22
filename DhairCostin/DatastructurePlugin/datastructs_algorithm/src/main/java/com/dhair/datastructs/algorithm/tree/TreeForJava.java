@@ -8,28 +8,28 @@ import java.util.concurrent.LinkedBlockingQueue;
  * Email: deng.shengjin@zuimeia.com
  */
 public class TreeForJava implements ITreeForJava {
-    private TreeNode mRootNode;
+    private TreeNode mTreeNode;
 
     @Override
     public TreeNode createTree(int[] intArr) {
         for (int intValue : intArr) {
-            insertTree(intValue);
+            insert(intValue);
         }
-        return mRootNode;
+        return mTreeNode;
     }
 
-    private void insertTree(int value) {
-        if (mRootNode == null) {
-            mRootNode = new TreeNode(value);
-            mRootNode.mTreeType = TreeNode.TreeType.Root;
+    private void insert(int intValue) {
+        if (mTreeNode == null) {
+            mTreeNode = new TreeNode(intValue);
+            mTreeNode.mTreeType = TreeNode.TreeType.Root;
         } else {
-            TreeNode currNode = mRootNode;//Warning
+            TreeNode currNode = mTreeNode;
             while (true) {
-                if (value < currNode.mValue) {
+                if (intValue < currNode.mValue) {
                     TreeNode tmpNode = currNode;
                     currNode = currNode.mLeftNode;
                     if (currNode == null) {
-                        tmpNode.mLeftNode = new TreeNode(value);
+                        tmpNode.mLeftNode = new TreeNode(intValue);
                         tmpNode.mLeftNode.mTreeType = TreeNode.TreeType.Left;
                         break;
                     }
@@ -37,40 +37,29 @@ public class TreeForJava implements ITreeForJava {
                     TreeNode tmpNode = currNode;
                     currNode = currNode.mRightNode;
                     if (currNode == null) {
-                        tmpNode.mRightNode = new TreeNode(value);
+                        tmpNode.mRightNode = new TreeNode(intValue);
                         tmpNode.mRightNode.mTreeType = TreeNode.TreeType.Right;
                         break;
                     }
                 }
+
             }
         }
     }
 
     @Override
     public void preSearch(TreeNode treeNode) {
-        if (treeNode != null) {
-            System.out.print(+treeNode.mValue + ",");
-            preSearch(treeNode.mLeftNode);
-            preSearch(treeNode.mRightNode);
-        }
+
     }
 
     @Override
     public void middleSearch(TreeNode treeNode) {
-        if (treeNode != null) {
-            middleSearch(treeNode.mLeftNode);
-            System.out.print(+treeNode.mValue + ",");
-            middleSearch(treeNode.mRightNode);
-        }
+
     }
 
     @Override
     public void postSearch(TreeNode treeNode) {
-        if (treeNode != null) {
-            postSearch(treeNode.mLeftNode);
-            postSearch(treeNode.mRightNode);
-            System.out.print(+treeNode.mValue + ",");
-        }
+
     }
 
     @Override
@@ -91,34 +80,16 @@ public class TreeForJava implements ITreeForJava {
 
     @Override
     public int getLeafNode(TreeNode treeNode) {
-        if (treeNode == null) {
-            return 0;
-        }
-        int leftNode = getLeafNode(treeNode.mLeftNode);
-        int rightNode = getLeafNode(treeNode.mRightNode);
-        if (treeNode.mLeftNode == null && treeNode.mRightNode == null) {
-            return leftNode + rightNode + 1;
-        } else {
-            return leftNode + rightNode;
-        }
+        return 0;
     }
 
     @Override
     public int getNode(TreeNode treeNode) {
-        if (treeNode == null) {
-            return 0;
-        }
-        return getNode(treeNode.mLeftNode) + getNode(treeNode.mRightNode) + 1;
+        return 0;
     }
 
     @Override
     public int getWeight(TreeNode treeNode) {
-        if (treeNode == null) {
-            return 0;
-        }
-        int leftWeight = getWeight(treeNode.mLeftNode);
-        int rightWeight = getWeight(treeNode.mRightNode);
-        int weight = Math.max(leftWeight, rightWeight);
-        return weight + 1;
+        return 0;
     }
 }

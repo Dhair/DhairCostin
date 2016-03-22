@@ -5,4 +5,5 @@ package com.dhair.costin.ui.base;
  * Email: deng.shengjin@zuimeia.com
  */
 public interface MvpView {
+
 }

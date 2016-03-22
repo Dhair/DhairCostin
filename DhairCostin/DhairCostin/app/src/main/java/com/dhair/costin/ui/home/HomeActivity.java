@@ -1,8 +1,16 @@
 package com.dhair.costin.ui.home;
 
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.IBinder;
+import android.os.Message;
+import android.os.Messenger;
+import android.os.RemoteException;
+import android.os.SystemClock;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -21,12 +29,17 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 import com.dhair.common.library.util.PhoneUtil;
+import com.dhair.costin.IMyAidlInterface;
 import com.dhair.costin.R;
 import com.dhair.costin.application.CostinApplication;
 import com.dhair.costin.data.model.UserModel;
 import com.dhair.costin.injection.component.UserComponent;
+import com.dhair.costin.service.AIDLService;
+import com.dhair.costin.service.MessengerService;
 import com.dhair.costin.ui.base.activity.BaseMvpActivity;
 import com.dhair.costin.ui.home.presenter.HomePresenter;
 import com.dhair.costin.ui.widget.touch.CustomView;
@@ -67,6 +80,11 @@ public class HomeActivity extends BaseMvpActivity<HomePresenter> {
     @Bind(R.id.custom_view)
     CustomView mCustomView;
 
+    @Bind(R.id.test1)
+    RelativeLayout mTest1;
+
+    @Bind(R.id.test2)
+    RelativeLayout mTest2;
     private ListPagerAdapter mPagerAdapter;
 
     public static Intent getStartIntent(Context context) {
@@ -79,6 +97,55 @@ public class HomeActivity extends BaseMvpActivity<HomePresenter> {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mExitAppHelper.registerReceiver();
+        Logger.e("JobSchedulerService onCreate");
+        memoryReference();
+
+        noMemoryReference();
+    }
+
+    private void memoryReference() {
+        new Thread() {
+            @Override
+            public void run() {
+                super.run();
+                while (true) {
+                    SystemClock.sleep(1000);
+                }
+            }
+        }.start();
+    }
+
+    private ThreadTest mThreadTest;
+
+    private static class ThreadTest extends Thread {
+        @Override
+        public void run() {
+            super.run();
+            while (!Thread.currentThread().isInterrupted()) {
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
+            }
+        }
+    }
+
+    private void noMemoryReference() {
+        if (mThreadTest == null) {
+            mThreadTest = new ThreadTest();
+        }
+        mThreadTest.start();
+    }
+
+    private void disableThreadMemoryReference() {
+        mThreadTest.interrupt();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        disableThreadMemoryReference();
     }
 
     @NonNull
@@ -96,6 +163,16 @@ public class HomeActivity extends BaseMvpActivity<HomePresenter> {
     protected void initData() {
         mPagerAdapter = new ListPagerAdapter(getSupportFragmentManager());
         getActivityComponent().inject(this);
+
+        ClassLoader classLoader = getClassLoader();
+        Logger.e("[onCreate] classLoader " + " : " + classLoader+","+Runtime.getRuntime().toString());
+        if (classLoader != null) {
+            Logger.e("[onCreate] classLoader " + " : " + classLoader.toString());
+            while (classLoader.getParent() != null) {
+                classLoader = classLoader.getParent();
+                Logger.e("[onCreate] classLoader " + " : " + classLoader.toString());
+            }
+        }
     }
 
     @Override
@@ -114,9 +191,81 @@ public class HomeActivity extends BaseMvpActivity<HomePresenter> {
 
         mButton.setOnClickListener(v -> {
 //            mCustomView.requestLayout();
-            mCustomView.invalidate();
+//            mCustomView.invalidate();
+//            Logger.e("aild messenger=result onServiceConnected");
+//            bindServiceByMessenger();
+
+            ImageView imageView = new ImageView(getContext());
+            imageView.setImageResource(R.drawable.splash_bg);
+            ViewGroup.LayoutParams lp = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+            mTest1.addView(imageView, lp);
+//            mTest2.addView(imageView, lp);
         });
     }
+
+    private void bindServieByAidl() {
+        Intent intent = new Intent(AIDLService.class.getName());
+        intent.setPackage(getPackageName());
+        bindService(intent, new ServiceConnection() {
+            @Override
+            public void onServiceConnected(ComponentName name, IBinder service) {
+                IMyAidlInterface iMyAidlInterface = IMyAidlInterface.Stub.asInterface(service);
+                try {
+                    int result = iMyAidlInterface.add(1, 2);
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            @Override
+            public void onServiceDisconnected(ComponentName name) {
+
+            }
+        }, BIND_AUTO_CREATE);
+    }
+
+    private Messenger mMessenger;
+
+    private void bindServiceByMessenger() {
+        Intent intent = new Intent(MessengerService.class.getName());
+        intent.setPackage(getPackageName());
+        bindService(intent, new ServiceConnection() {
+            @Override
+            public void onServiceConnected(ComponentName name, IBinder service) {
+                Logger.e("aild messenger=result onServiceConnected");
+                mMessenger = new Messenger(service);
+
+                Message messageClient = Message.obtain(null, 0);
+                Messenger replyMessenger = new Messenger(new Handler() {
+                    @Override
+                    public void handleMessage(Message msg) {
+                        super.handleMessage(msg);
+                        switch (msg.what) {
+                            case 1:
+                                int result = msg.getData().getInt("result");
+                                break;
+                        }
+                    }
+                });
+                Bundle bundle = new Bundle();
+                bundle.putInt("first", 1);
+                bundle.putInt("second", 2);
+                messageClient.setData(bundle);
+                messageClient.replyTo = replyMessenger;
+                try {
+                    mMessenger.send(messageClient);
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            @Override
+            public void onServiceDisconnected(ComponentName name) {
+
+            }
+        }, BIND_AUTO_CREATE);
+    }
+
 
     private void updateActionBar() {
         //针对Theme 为AppTheme
@@ -189,11 +338,6 @@ public class HomeActivity extends BaseMvpActivity<HomePresenter> {
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        mExitAppHelper.unregisterReceiver();
-    }
 
     public static class ListPagerAdapter extends FragmentStatePagerAdapter {
         private int mDefaultTab = 7;
@@ -216,5 +360,12 @@ public class HomeActivity extends BaseMvpActivity<HomePresenter> {
         public CharSequence getPageTitle(int position) {
             return "Title" + position;
         }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        Logger.e("JobSchedulerService onSaveInstanceState");
+        super.onSaveInstanceState(outState);
+        outState.putInt("sfdsf", 1);
     }
 }

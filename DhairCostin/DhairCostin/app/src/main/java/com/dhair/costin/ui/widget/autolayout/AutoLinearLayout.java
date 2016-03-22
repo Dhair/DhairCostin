@@ -8,12 +8,15 @@ import android.widget.LinearLayout;
 
 import com.dhair.autolayout.api.AutoLayout;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
  * Creator: dengshengjin on 16/1/9 17:44
  * Email: deng.shengjin@zuimeia.com
  */
 @AutoLayout
 public class AutoLinearLayout extends LinearLayout {
+
     public AutoLinearLayout(Context context) {
         super(context);
     }

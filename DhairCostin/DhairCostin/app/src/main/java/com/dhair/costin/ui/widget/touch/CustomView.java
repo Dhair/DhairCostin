@@ -40,21 +40,25 @@ public class CustomView extends ImageView {
 
     @Override
     public void draw(Canvas canvas) {
-        super.draw(canvas);
         Log.e("CustomView ", "CustomView draw");
+        super.draw(canvas);
     }
 
     @Override
     protected void dispatchDraw(Canvas canvas) {
-        super.dispatchDraw(canvas);
         Log.e("CustomView ", "CustomView dispatchDraw");
+        super.dispatchDraw(canvas);
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
+        Log.e("CustomView ", "CustomView onDraw");
         super.onDraw(canvas);
     }
 
+//    boolean draw(Canvas canvas, ViewGroup parent, long drawingTime){
+//        Log.e("CustomView ", "CustomView draw(canvas,parent,drawingTime");
+//    }
     @Override
     public boolean dispatchTouchEvent(MotionEvent event) {
         return super.dispatchTouchEvent(event);
@@ -67,7 +71,7 @@ public class CustomView extends ImageView {
 
     @Override
     public void computeScroll() {
-        super.computeScroll();
         Log.e("CustomView ", "CustomView computeScroll");
+        super.computeScroll();
     }
 }

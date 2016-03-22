@@ -5,27 +5,27 @@ package com.dhair.datastructs.algorithm.sort;
  * Email: deng.shengjin@zuimeia.com
  */
 public class SortForJava implements ISortForJava {
+
     @Override
     public void print(int[] intArr) {
         for (int intValue : intArr) {
             System.out.print(intValue + ",");
         }
-        System.out.println("\n");
+        System.out.println();
     }
 
     @Override
     public void bubbleSort(int[] intArr) {
         int length = intArr.length;
         for (int i = 0; i < length - 1; i++) {
-            for (int j = i + 1; j < length; j++) {
-                if (intArr[i] > intArr[j]) {
+            for (int j = i; j < length; j++) {
+                if (intArr[j] < intArr[i]) {
                     int tmp = intArr[i];
                     intArr[i] = intArr[j];
                     intArr[j] = tmp;
                 }
             }
         }
-
     }
 
     @Override
@@ -40,11 +40,11 @@ public class SortForJava implements ISortForJava {
     private int getMiddle(int[] intArr, int low, int high) {
         int tmp = intArr[low];
         while (low < high) {
-            while (low < high && tmp <= intArr[high]) {
+            while (low < high && intArr[high] >= tmp) {
                 high--;
             }
             intArr[low] = intArr[high];
-            while (low < high && tmp >= intArr[low]) {
+            while (low < high && intArr[low] <= tmp) {
                 low++;
             }
             intArr[high] = intArr[low];
@@ -57,7 +57,7 @@ public class SortForJava implements ISortForJava {
     public void insertSort(int[] intArr) {
         int length = intArr.length;
         for (int i = 0; i < length; i++) {
-            for (int j = i; j > 0 && intArr[j] < intArr[j - 1]; j--) {
+            for (int j = i; j >= 1 && intArr[j] < intArr[j - 1]; j--) {
                 int tmp = intArr[j];
                 intArr[j] = intArr[j - 1];
                 intArr[j - 1] = tmp;
@@ -76,9 +76,9 @@ public class SortForJava implements ISortForJava {
                 }
             }
             if (min != i) {
-                int tmp = intArr[min];
-                intArr[min] = intArr[i];
-                intArr[i] = tmp;
+                int tmp = intArr[i];
+                intArr[i] = intArr[min];
+                intArr[min] = tmp;
             }
         }
     }
@@ -98,7 +98,6 @@ public class SortForJava implements ISortForJava {
                     }
                 }
             }
-
             if (middle == 1) {
                 break;
             }

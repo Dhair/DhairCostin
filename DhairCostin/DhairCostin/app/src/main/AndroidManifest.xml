@@ -28,13 +28,32 @@
         <!--screenSize是为了适配3.2以上切换屏幕时不重新执行生命周期-->
         <activity
             android:name="com.dhair.costin.ui.home.HomeActivity"
+            android:process=":service"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"/>
+
         <service
             android:name="com.dhair.costin.service.JobSchedulerService"
             android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+        <service
+            android:name="com.dhair.costin.service.AIDLService"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.dhair.costin.service.AIDLService"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.dhair.costin.service.MessengerService"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.dhair.costin.service.MessengerService"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
