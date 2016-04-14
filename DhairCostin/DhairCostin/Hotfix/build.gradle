@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'maven'
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
@@ -11,8 +11,13 @@ android {
         versionName "1.0"
     }
     buildTypes {
+        debug {
+            logger.log(LogLevel.ERROR, 'Hotfix proguard')
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -23,3 +28,26 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
 }
+
+ext{
+    PUBLISH_VERSION = android.defaultConfig.versionName;
+}
+uploadArchives {
+    repositories.mavenDeployer {
+        repository(url: 'file:Hotfix/outputs/libs')
+        pom.project{
+            groupId 'com.dhair.hotfix'
+            artifactId 'sdk'
+            version PUBLISH_VERSION
+        }
+    }
+}
+
+task makeJar(type:Copy) {
+    // 未混淆的jar
+    from('build/intermediates/bundles/release/')
+    into('build/intermediates/libs')
+    include('classes.jar')
+    rename ('classes.jar','android_release.jar')
+}
+makeJar.dependsOn(build)

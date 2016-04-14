@@ -3,6 +3,7 @@ package com.dhair.costin.ui.base.activity;
 import android.annotation.TargetApi;
 import android.app.ActivityManager;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -25,6 +26,11 @@ import com.dhair.costin.ui.base.fragment.HashComponent;
 public abstract class BaseDaggerActivity extends AppCompatActivity implements HashComponent<ActivityComponent> {
     private ActivityComponent mActivityComponent;
     private Handler mHandler;
+
+    @Override
+    public void startActivity(Intent intent) {
+        super.startActivity(intent);
+    }
 
     protected ActivityComponent getActivityComponent() {
         if (mActivityComponent == null) {

@@ -3,6 +3,8 @@ package com.dhair.hotfix.utils;
 import android.content.Context;
 import android.content.res.AssetManager;
 
+import com.dhair.hotfix.DhairHotFix;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -22,6 +24,7 @@ public class AssetUtils {
             in.close();
             out.close();
         }
+        DhairHotFix.init(context);
         return outFile.getAbsolutePath();
     }
 

@@ -24,7 +24,6 @@ public class DhairHotFix {
     public static void init(Context context) {
         File dexDir = new File(context.getFilesDir(), DEX_DIR);
         dexDir.mkdir();
-
         String dexPath = null;
         try {
             dexPath = AssetUtils.copyAsset(context, HACK_DEX, dexDir);
